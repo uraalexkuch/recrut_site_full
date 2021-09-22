@@ -163,8 +163,8 @@ const quizQuestionsDef = [
                 content: "да"
             },
             {
-                type: "результат",
-                content: "мусор"
+                type: "мусор",
+                content: "нет"
             }
         ]
     },

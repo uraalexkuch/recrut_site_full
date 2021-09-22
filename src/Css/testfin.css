@@ -1,0 +1,80 @@
+
+.well.cert{
+    background-image: url(../../src/Img/sertyfikat.svg);
+    background-repeat: no-repeat;
+    height:100%;
+     margin-left:25% ;
+    margin-right:21% ;
+  padding-bottom: 5rem;
+
+}
+.well{
+
+    height:100%;
+    margin-left:25% ;
+    margin-right:25% ;
+
+
+}
+.logo.cert{
+    margin-top: 15%;
+    margin-left: 40%;
+    margin-right: auto;
+width: 150px;
+    height: auto;
+}
+h2.cert{
+    color: #005BAA;
+    font-weight: bold;
+    font-size: 34pt;
+    font-family: Sans, serif ;
+    margin-right: auto;
+    margin-left: auto;
+}
+h1.cert{
+    color: #005BAA;
+    font-weight: bold;
+    font-size: 50pt;
+    font-family: Sans, serif ;
+    text-align: center;
+    margin-right:auto;
+    margin-left: auto;
+}
+h3.cert{
+    color: #005BAA;
+    font-weight: bold;
+    font-size: 18pt;
+    font-family: Sans, serif ;
+
+    margin-right: auto;
+    margin-left:auto;
+}h3.footer{
+     color: #005BAA;
+     font-weight: bold;
+     font-size: 15pt;
+     font-family: Sans, serif ;
+     margin-top:2rem ;
+     margin-right: auto;
+     margin-left: auto;
+ }
+.col-4.dir.left{
+    color: #005BAA;
+    font-weight: bold;
+    font-size: 16pt;
+    font-family: Sans, serif ;
+    margin-top:2rem ;
+    margin-left:auto ;
+    text-align: left;
+padding-left: 3rem;
+}
+.col-4.dir.right{
+    color: #005BAA;
+    font-weight: bold;
+    font-size: 16pt;
+    font-family: Sans, serif ;
+    margin-top:4.3rem ;
+margin-right:auto ;
+    margin-left:auto;
+padding-right:3rem ;
+    text-align: right;
+}

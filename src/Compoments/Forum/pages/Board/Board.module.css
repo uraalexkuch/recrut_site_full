@@ -1,0 +1,13 @@
+.LoadingCategories {
+  background-color: white;
+  width: 100%;
+  border-radius: 25px;
+  box-shadow: 0 0 10px #00276617;
+  padding: 20px;
+}
+
+.Skeleton {
+  margin-top: 40px;
+}
+.ant-typography {
+  color: #005BAA}

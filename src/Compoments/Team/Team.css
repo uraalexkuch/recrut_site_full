@@ -1,0 +1,266 @@
+/* Three columns side by side */
+body {
+    width: 100%;
+    height: 300px;
+}
+
+.card-title {
+    fontSize: 1.8rem;
+    font-weight: bold;
+    color: #005BAA;
+}
+.title.card-title {
+    fontSize: 1.8rem;
+    font-weight: bold;
+    color: #005BAA;
+}
+.card {
+    flex-direction: row;
+    border-radius: 25px;
+    width: 100%;
+    height: auto;
+    border: #005BAA solid 5px;
+    box-shadow: 0 0 10px #333333;
+}
+
+.shef {
+    flex-direction: row;
+    border-radius: 25px;
+    width: 100%;
+    height: auto;
+    padding-right: 1rem;
+    border: #005BAA solid 5px;
+    box-shadow: 0 0 10px #333333;
+}
+
+.sigh {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #005BAA;
+    text-indent: 11rem;
+}
+
+q {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #005BAA;
+}
+
+.card-img {
+    flex-shrink: 1;
+    border-radius: 5px;
+    max-height: 400px;
+    max-width: 300px;
+    padding: 5px;
+
+}
+.shef.card-img {
+    flex-grow: 1;
+    flex-shrink: 0;
+    border: none;
+     border-radius: 25px;
+    max-height: 600px;
+    max-width: 400px;
+     padding: 5px;
+    box-shadow: none;
+ }
+
+.ad {
+    margin-left: 3%;
+    margin-right: 3%;
+    flex-wrap: nowrap;
+    padding-right: 1rem;
+}
+
+.col-lg-6 {
+    flex-shrink: 1;
+    border-radius: 5px;
+
+    max-width: 400px;
+}
+
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.col-lg-4.title {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #005BAA;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.ad.card-title.h5 {
+    padding-top: 3rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #005BAA;
+}
+
+.ad.card-text {
+    flex-grow: 1;
+    height: auto;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #005BAA;
+}
+
+.col-lg-4 {
+    flexShrink: 1;
+    border-radius: 25px;
+    margin-right: 25px;
+    margin-left: 60px;
+    width: 100%;
+    height: auto;
+    border: #005BAA solid 5px;
+
+}
+
+.sheftext.card-text {
+    flex-grow: 1;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #005BAA;
+}
+
+.teamTitle {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #005BAA;
+    margin-bottom: 2%;
+}
+
+.sheftitle.card-title.h5 {
+    padding-top: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #005BAA;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+
+@media screen and (max-width: 768px) {
+    .teamTitle {
+        font-size: 1.5rem;
+        margin-bottom: 3%;
+    }
+    .shef.card-img {
+        flex-grow: 1;
+        flex-shrink: 0;
+        border-radius: 25px;
+        max-height: 600px;
+        max-width: 400px;
+        padding: 5px;
+    }
+
+    .ad.card-deck {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        flex-wrap: nowrap;
+    }
+
+    .col card {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+    .ad.card-title.h5 {
+        padding-top: 1rem;
+        font-size: 1.3rem;
+    }
+
+    .ad.card-text {
+        font-size: 1.2rem;
+    }
+
+    .sheftext.card-text {
+        font-size: 1.2rem;
+    }
+
+    .sheftitle.card-title.h5 {
+
+        font-size: 1.5rem;
+    }
+
+    .sigh {
+        font-size: 1rem;
+        text-indent: 15rem;
+    }
+
+    .card-title {
+        fontSize: 1.2rem;
+    }
+
+    .col-lg-4.title {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    q {
+        font-size: 1.2rem;
+    }
+
+    .titleq.card-title.h5 {
+        font-size: 1.2rem;
+    }
+
+    .shef.card {
+        flex-direction: column;
+        border-radius: 25px;
+        width: 100%;
+        height: auto;
+        border: #005BAA solid 5px;
+        box-shadow: 0 0 10px #333333;
+    }
+
+    .card-img {
+        flex-shrink: 1;
+        border-radius: 5px;
+        max-height: 500px;
+        max-width: 400px;
+    }
+
+    .card-horizontal {
+        flex-direction: column;
+        flex: 1 1 auto;
+    }
+
+    .card-horizontal.col-6 {
+        max-width: 100%;
+    }
+
+    .card-desk {
+        flex-flow: column wrap;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1536px) {
+    .shef.card-img {
+        flex-shrink: 1;
+        border-radius: 25px;
+       max-height: 500px;
+        max-width: 350px;
+        padding: 5px;
+    }
+    .sigh {
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: #005BAA;
+        text-indent: 5rem;
+    }
+}
+
+
+
+
+
+
+
+

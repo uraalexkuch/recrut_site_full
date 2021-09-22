@@ -1,12 +1,10 @@
 import React, {Component} from "react";
-
 import "../Presentaion/Presentaion.css"
-
-import TestTimeType from "./TestTimeType/TestTimeType";
-import TestTarget from "./TestTarget/TestTarget";
 import Card from "react-bootstrap/Card";
 import {CardDeck} from "react-bootstrap";
 import TestProfDef from "./TestProf/TestProfDef";
+import TableTest from "./TestTable/TableTest";
+
 
 
 export default class StartDef extends Component {
@@ -31,7 +29,7 @@ export default class StartDef extends Component {
                         <TestProfDef/>
                     </Card>
                     <Card style={{padding:"1%"}}>
-                        <TestTimeType/>
+<TableTest/>
                     </Card>
 
                 </CardDeck>

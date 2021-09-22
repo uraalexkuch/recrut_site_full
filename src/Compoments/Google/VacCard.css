@@ -1,0 +1,115 @@
+.col-md-1.modulpouhead{
+    font-size: 13px;
+    font-weight: bold;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #FFD947;
+    border-radius: 15px;
+    padding: 3px;
+    color:#FFD947;
+    margin-bottom: 0.2rem;
+    text-align:center;
+    width: 100%;
+    height: auto;
+    background-color:#005BAA;
+}
+.col.modulpouhead{
+    font-size: 13px;
+    font-weight: bold;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #FFD947;
+    border-radius: 15px;
+    padding: 3px;
+    color:#FFD947;
+    margin-bottom: 0.2rem;
+    text-align:center;
+    width: 100%;
+    height: auto;
+    background-color:#005BAA;
+}
+.col.modulpoudata{
+    font-size: 13px;
+    font-weight: bold;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #005BAA;
+    border-radius: 15px;
+    padding: 3px;
+    color:#005BAA;
+    margin-bottom: 0.2rem;
+    text-align:center;
+    width: 100%;
+    height: auto;
+
+}
+.col-md-2.modulpouhead{
+    font-size: 13px;
+    font-weight: bold;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #FFD947;
+    border-radius: 15px;
+    padding: 1px;
+    color:#FFD947;
+    margin-bottom: 0.2rem;
+    text-align:center;
+    width: 100%;
+    height: auto;
+    background-color:#005BAA;
+}
+.react-datepicker__input-container{
+    width: min-content;
+}
+.col-md-1.modulpoudata{
+    font-size: 13px;
+    font-weight: bold;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #005BAA;
+    border-radius:15px;
+    padding: 1px;
+    color:#005BAA;
+    margin-bottom: 0.2rem;
+    width: 100%;
+    height: auto;
+  text-align: center;
+
+}
+.col-md-2.modulpoudata{
+    font-size: 13px;
+    font-weight: bold;
+    border: 3px solid #005BAA;
+    border-radius: 15px;
+    padding: 1px;
+    color:#005BAA;
+    margin-bottom: 0.2rem;
+    width: 100%;
+    height: auto;
+    text-align: center;
+
+}
+.btn.vaccard{
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0;
+    border-width: 3px;
+    color:#005BAA;
+    background-color: #ffffff;
+}
+.btn.datedel{
+     padding-right:5px ;
+    padding-bottom:0 ;
+    padding-top:0 ;
+    padding-left: 5px;
+    width: auto;
+    height: auto;
+   margin: 0;
+
+    border-width: 2px;
+    color:#005BAA;
+    background-color: #ffffff;
+}
+.fa-2x {
+    font-size: 1em;
+}

@@ -1,0 +1,54 @@
+.page-heading_learn {
+    text-align: center;
+    background-image: url(../Img/slide.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 230px 0 150px 0;
+    color: #fff;
+}
+
+.page-heading_learn {
+    text-transform: capitalize;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+.page-heading_learn {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    display: block;
+    font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+    .hero-image{
+        height: auto;
+        width: auto;
+    }
+    .page-heading_learn h1, .page-heading_learn span{
+        font-size: 1.5rem;
+        margin-top: 0;
+
+    }
+    .container {
+        position: relative;
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+        border-radius: 3px;
+    }
+    .page-heading_learn{
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #fff;
+        display: block;
+        padding-top: 0;
+        font-weight: bold;
+    }
+
+}

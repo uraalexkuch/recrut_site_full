@@ -1,0 +1,94 @@
+
+.hero-image-trennig{
+ background-image:url( "../Img/trennig.webp");
+    background-color: #333333;
+    height: auto;
+    width: 100%;
+    margin-bottom:0 ;
+padding-left: 0;
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+/* The hero image */
+.hero-text-trennig q{
+    font-size: 2rem;
+    margin-top: 0;
+    left: 20%;
+    color: #FFD947;
+}
+
+.hero-text-trennig{
+    margin-top:20% ;
+   text-align: center;
+    color: #FFD947;
+    position: relative;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* Place text in the middle of the image */
+.hero-text-trennig i{
+    margin-top:30% ;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+    height: auto;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+    .hero-image{
+        height: auto;
+        width: auto;
+    }
+    .hero-text-trennig.h1, h1 {
+        margin-top: 30%;
+        padding-top:50%;
+    }
+    .hero-text-trennig h1 q{
+        font-size: 1.5rem;
+        margin-top:0;
+        left: 20%;
+        color: #FFD947;
+    }
+
+    .hero-text-trennig{
+        margin-top:50% ;
+        text-align: center;
+        color: #FFD947;
+        position: relative;
+        height: auto;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    /* Place text in the middle of the image */
+    .hero-text-trennig i {
+        margin-top: 1rem;
+        text-align: center;
+        color: #ffffff;
+        position: relative;
+        height: auto;
+        top: 50%;
+        left: 15%;
+        font-size: 1.2rem;
+        transform: translate(-50%, -50%);
+    }
+
+    .page-heading{
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #fff;
+        display: block;
+        padding-top: 0;
+        font-weight: bold;
+    }
+
+}

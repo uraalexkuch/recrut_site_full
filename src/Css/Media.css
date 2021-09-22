@@ -1,0 +1,36 @@
+.card-text{
+    text-align: justify;
+    flex-grow: 1;
+    height: auto;
+    width: 100%;
+    font-size: 1.2rem;
+    white-space: pre-wrap;
+    margin-left: 10px;
+    font-weight: bold;
+    color: rgb(0, 91, 170);
+    margin-right: 10px}
+@media screen and (max-width: 768px) {
+    .card{
+        flex-direction: column;
+        width: 100%;
+    }
+    img.col-md-6{
+        max-width: 100%;
+    }
+    .history{
+        font-size: 1rem;
+        align-content: center;
+    }
+    .p{
+        text-align: justify;
+        flex-grow: 1;
+        height: auto;
+        width: 100%;
+        font-size: 1rem;
+        white-space: pre-wrap;
+        margin-left: 10px;
+        padding-right: 10%;
+        font-weight: bold;
+        color: rgb(0, 91, 170);
+        margin-right: 10px}
+}

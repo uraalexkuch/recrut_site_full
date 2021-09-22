@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="recruting@localhost">
+  <database-model serializer="dbm" dbms="MONGO" family-id="MONGO" format-version="4.18">
+    <root id="1">
+      <ServerVersion>4.2.8</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="admin"/>
+    <schema id="3" parent="1" name="config"/>
+    <schema id="4" parent="1" name="local"/>
+    <schema id="5" parent="1" name="recruting">
+      <Current>1</Current>
+    </schema>
+    <table id="6" parent="5" name="fotoData"/>
+    <table id="7" parent="5" name="fotodatas"/>
+    <table id="8" parent="5" name="indexData"/>
+    <table id="9" parent="5" name="indexdatas"/>
+    <column id="10" parent="6" name="_id">
+      <DataType>ObjectId(0)|12s</DataType>
+    </column>
+    <column id="11" parent="6" name="id">
+      <Position>1</Position>
+      <DataType>Integer|4s</DataType>
+    </column>
+    <column id="12" parent="6" name="original">
+      <Position>2</Position>
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="13" parent="6" name="thumbnail">
+      <Position>3</Position>
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="14" parent="7" name="_id">
+      <DataType>ObjectId(0)|12s</DataType>
+    </column>
+    <column id="15" parent="7" name="__v">
+      <Position>1</Position>
+      <DataType>Integer|4s</DataType>
+    </column>
+    <column id="16" parent="7" name="id">
+      <Position>2</Position>
+      <DataType>Integer|4s</DataType>
+    </column>
+    <column id="17" parent="7" name="original">
+      <Position>3</Position>
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="18" parent="7" name="thumbnail">
+      <Position>4</Position>
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="19" parent="8" name="_id">
+      <DataType>ObjectId(0)|12s</DataType>
+    </column>
+    <column id="20" parent="8" name="robotodav">
+      <Position>1</Position>
+      <DataType>Integer|4s</DataType>
+    </column>
+    <column id="21" parent="8" name="vacancy">
+      <Position>2</Position>
+      <DataType>Integer|4s</DataType>
+    </column>
+    <column id="22" parent="8" name="vacancyNow">
+      <Position>3</Position>
+      <DataType>Integer|4s</DataType>
+    </column>
+    <column id="23" parent="8" name="working">
+      <Position>4</Position>
+      <DataType>Integer|4s</DataType>
+    </column>
+    <column id="24" parent="9" name="_id">
+      <DataType>ObjectId(0)|12s</DataType>
+    </column>
+    <column id="25" parent="9" name="__v">
+      <Position>1</Position>
+      <DataType>Integer|4s</DataType>
+    </column>
+    <column id="26" parent="9" name="robotodav">
+      <Position>2</Position>
+      <DataType>Integer|4s</DataType>
+    </column>
+    <column id="27" parent="9" name="vacancy">
+      <Position>3</Position>
+      <DataType>Integer|4s</DataType>
+    </column>
+    <column id="28" parent="9" name="vacancyNow">
+      <Position>4</Position>
+      <DataType>Integer|4s</DataType>
+    </column>
+    <column id="29" parent="9" name="working">
+      <Position>5</Position>
+      <DataType>Integer|4s</DataType>
+    </column>
+  </database-model>
+</dataSource>

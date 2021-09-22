@@ -1,0 +1,15 @@
+
+.shablon.cert{
+    background-image: url(../../Img/sertyfikat.svg);
+    background-repeat: no-repeat;
+    width: 210mm;
+    height: 297mm;
+
+}
+.shablon{
+    height:100%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+

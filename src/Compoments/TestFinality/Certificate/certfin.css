@@ -1,0 +1,81 @@
+
+.well.cert{
+    background-image: url(../../../Img/sertyfikat.png);
+    background-repeat: no-repeat;
+    width: 210mm;
+    min-height: 297mm;
+    padding: 20mm;
+    margin: 10mm auto;
+    border: 1px #D3D3D3 solid;
+    border-radius: 5px;
+
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+}
+.well{
+    height:auto;
+    margin-left:auto;
+    margin-right:auto;
+}
+.logo.cert{
+    margin-top: 15%;
+    margin-left: 39%;
+    margin-right: auto;
+width: 160px;
+    height: auto;
+}
+h2.cert{
+    color: #005BAA;
+    font-weight: bold;
+    font-size: 44pt;
+    font-family: Sans, serif ;
+    margin-right: auto;
+    margin-left: auto;
+}
+h1.cert{
+    color: #005BAA;
+    font-weight: bold;
+    font-size: 60pt;
+    font-family: Sans, serif ;
+    text-align: center;
+    margin-right:auto;
+    margin-left: auto;
+}
+h3.cert{
+    color: #005BAA;
+    font-weight: bold;
+    font-size: 25pt;
+    font-family: Sans, serif ;
+
+    margin-right: auto;
+    margin-left:auto;
+}h3.footer{
+     color: #005BAA;
+     font-weight: bold;
+     font-size: 25pt;
+     font-family: Sans, serif ;
+     margin-top:8% ;
+     margin-right: 12%;
+
+ }
+.col-4.dir.left{
+    color: #005BAA;
+    font-weight: bold;
+    font-size: 30pt;
+    font-family: Sans, serif ;
+    margin-top:2rem ;
+    margin-left:12%;
+    text-align: left;
+padding-left: 3rem;
+}
+.col-4.dir.right{
+    color: #005BAA;
+    font-weight: bold;
+    font-size: 30pt;
+    font-family: Sans, serif ;
+    margin-top:2rem ;
+margin-right:auto ;
+    margin-left:4%;
+padding-right:3rem ;
+    text-align: right;
+}

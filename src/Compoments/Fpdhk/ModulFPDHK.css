@@ -1,0 +1,68 @@
+.history {
+    margin-top: 10px;
+}
+.history .nav-tabs{
+    margin-top:10px;
+    margin-left: 16px;
+   width: 100%;
+    height: auto;
+    border-radius:10px ;
+    background-color: #ffffff;
+    box-shadow:  10px 10px 20px #333333;
+    border-right: 5px solid #005BAA;
+    font-weight: bold;padding:0.5rem ;
+    white-space: pre-wrap;
+}
+
+.history .nav-tabs.nav-link {
+    white-space: pre-wrap;
+}
+.history .nav-tabs .nav-link.active, .nav-tabs .show>.nav-link
+{ box-shadow:  0 0 10px #333333;
+    margin-bottom:5px ;
+    font-size:18px ;
+    border: 5px solid #005BAA;
+    background-color:#FFD947;
+    color:  #005BAA;
+    white-space: pre-wrap;
+}
+
+.nav-pills .nav-link{
+    border-radius:25px ;
+    font-size:18px ;
+    border: 5px solid #005BAA;
+    background-color:#ffffff;
+    color:  #005BAA;
+    font-weight: bold;
+    white-space: pre-wrap;
+}
+h2.modul{
+    color: #005BAA;
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.8rem;
+    white-space: pre-wrap;
+}
+
+.tab-pane{
+    width: 100%;
+    margin-top: 10px;
+    height:auto;
+    font-size: 18px;
+    font-weight: bold;
+    color:#005BAA;
+    border-radius:25px ;
+    background: #FFFFff;
+    white-space: pre-wrap;
+
+}
+.tab-pane .card {
+    margin:5px ;
+    width: auto;
+    height: auto;
+    box-shadow:  0 0 10px #333333;
+    border: solid #005BAA;
+    white-space: pre-wrap;
+}
+

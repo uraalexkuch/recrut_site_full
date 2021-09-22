@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="e2fcf2a2-fd78-469f-83a7-23b890a644f5" name="donocz.gov.ua" url="http://doncz.gov.ua/recruting">
+        <fileTransfer rootFolder="/home/yura" accessType="SFTP" host="donocz.gov.ua" port="2222" sshConfigId="ee724bbe-0f8f-401d-99d9-c5be62379f45" sshConfig="yura@donocz.gov.ua:2222 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

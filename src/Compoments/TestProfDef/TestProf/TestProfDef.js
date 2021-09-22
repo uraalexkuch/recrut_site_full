@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Quiz from "../../TestProfDef/TestProf/components/Quiz";
 import Result from "../../TestProfDef/TestProf/components/Result";
 import quizQuestionsDef from "../TestProf/api/quizQuestionsTarget";
-import quizQuestionsTempTwo from "../TestTarget/api/quizQuestionsTarget";
+
 
 
 

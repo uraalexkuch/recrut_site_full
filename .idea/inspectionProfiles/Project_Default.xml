@@ -1,0 +1,48 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="CssUnknownProperty" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myCustomPropertiesEnabled" value="true" />
+      <option name="myIgnoreVendorSpecificProperties" value="false" />
+      <option name="myCustomPropertiesList">
+        <value>
+          <list size="8">
+            <item index="0" class="java.lang.String" itemvalue="whitespace" />
+            <item index="1" class="java.lang.String" itemvalue="textalign" />
+            <item index="2" class="java.lang.String" itemvalue="flexshrink" />
+            <item index="3" class="java.lang.String" itemvalue="paddingtop" />
+            <item index="4" class="java.lang.String" itemvalue="fontsize" />
+            <item index="5" class="java.lang.String" itemvalue="marginleft" />
+            <item index="6" class="java.lang.String" itemvalue="backgroundcolor" />
+            <item index="7" class="java.lang.String" itemvalue="flexdirection" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="DuplicatedCode" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <Languages>
+        <language minSize="64" name="JavaScript" />
+      </Languages>
+    </inspection_tool>
+    <inspection_tool class="Eslint" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="10">
+            <item index="0" class="java.lang.String" itemvalue="collapseonselect" />
+            <item index="1" class="java.lang.String" itemvalue="expand" />
+            <item index="2" class="java.lang.String" itemvalue="player" />
+            <item index="3" class="java.lang.String" itemvalue="maxwidth" />
+            <item index="4" class="java.lang.String" itemvalue="ondeleted" />
+            <item index="5" class="java.lang.String" itemvalue="validations" />
+            <item index="6" class="java.lang.String" itemvalue="validator" />
+            <item index="7" class="java.lang.String" itemvalue="oninvalid" />
+            <item index="8" class="java.lang.String" itemvalue="oninput" />
+            <item index="9" class="java.lang.String" itemvalue="class" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+  </profile>
+</component>

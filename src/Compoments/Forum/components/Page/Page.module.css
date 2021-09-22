@@ -1,0 +1,14 @@
+.Page {
+
+  background-color: #005BAA;
+}
+
+.MainLayout {
+  margin-top: 2rem;
+  padding: 0 100px;
+  position: relative;
+  z-index: 1;
+
+}
+
+

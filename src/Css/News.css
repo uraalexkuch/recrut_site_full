@@ -1,0 +1,80 @@
+.col-md-6 .img .embed-responsive-16by9{
+    flex-shrink: 1;
+    border-radius: 25px;
+    height: auto;
+    width: 100%;
+}
+
+.searchComponent.search-container {
+height: auto;
+    width: 100%;
+    font-size: 14px;
+    padding: 1rem;
+    overflow: auto;
+    text-align: center;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.search {
+    padding: 4px;
+    margin: 1rem;
+    font-size: 17px;
+    height: auto;
+    width: 50%;
+
+}
+
+.searchComponent .search-container  {
+    padding: 6px 10px;
+
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+}
+
+.searchComponent .search-container button:hover {
+    background: #ccc;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .card-title{
+        font-size: 16px;
+    }
+    .card-text{
+        font-size: 14px;
+    }
+    .btn.btn.btn-primary{
+        font-size: 14px;
+    }
+    .news{
+        font-size: 14px;
+    }
+    .title{
+        font-size: 14px;
+    }
+    .inov{
+        font-size: 1rem;
+
+    }
+
+.searchComponent .search-container {
+    float: none;
+    font-size: 1rem;
+}
+    .searchComponent .a, .searchComponent input[type=text], .search-container button {
+        float: none;
+        display: block;
+        text-align: left;
+        margin: 0;
+        padding: 0.5rem;
+        font-size: 1rem;
+        width: 100%;
+    }
+    .searchComponent input[type=text] {
+        border: 1px solid #ccc;
+        font-size: 1rem;
+    }
+}
+

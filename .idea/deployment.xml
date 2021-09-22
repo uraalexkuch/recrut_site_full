@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="donocz.gov.ua">
+    <serverData>
+      <paths name="donocz.gov.ua">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/usr/share/nginx/recruting" local="$PROJECT_DIR$" web="http://doncz.gov.ua/recruting" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>

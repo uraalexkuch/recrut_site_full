@@ -1,0 +1,37 @@
+/* Pagination links */
+.pagination{
+display: inline;
+}
+.pagination a {
+border-color:#FFD947 ;
+border-style:solid ;
+border-width: 5px;
+background-color: #005BAA;
+border-radius: 10px;
+color:#FFD947;
+margin-left: 5px;
+    margin-bottom: 5px;
+float: left;
+padding: 0 8px;
+
+transition: background-color .3s;
+}
+
+/* Style the active/current link */
+
+.pagination li.active a{
+    background-color: #FFD947;
+    color:  #005BAA;
+    border-color:#005BAA ;
+    border-style:solid ;
+    border-width: 5px;
+
+}
+/* Add a grey background color on mouse-over */
+.pagination li:hover a{
+    background-color: #FFD947;
+    color:  #005BAA;
+    border-color:#005BAA ;
+    border-style:solid ;
+    border-width: 5px;
+}

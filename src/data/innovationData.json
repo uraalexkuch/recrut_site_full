@@ -1,0 +1,22 @@
+[
+  {"id": "1",
+    "title": "Інтерактивні карта вакансій  Донецької області",
+    "url": " https://don.dcz.gov.ua/publikaciya/interaktyvni-karty-vakansiy-centriv-zaynyatosti-doneckoyi-oblasti"
+  },
+  {"id": "2",
+    "title": "Інтерактивнa мапa відеорезюме шукачів роботи",
+    "url": "https://www.google.com/maps/d/u/0/viewer?mid=1XWAdRuZoVMiGI3U8Nrm8UelUpvuyeaTn&ll=47.11115459999999%2C37.5124683&z=8&fbclid=IwAR3TVp5O6-GXnGaX5iDHE2mk2o640Ky_t74QTwSUcHtcpz8NvVDWA-zu_H0"
+  },
+  {"id": "3",
+    "title": "Мобільний додаток \"Центр розвитку підприємництва\" ",
+    "url": "https://play.google.com/store/apps/details?id=cz.com.businessconsulntigcenter&hl=ua"
+  },
+  {"id": "4",
+    "title": "Мобільний додаток \"Центр професійної орієнтації\"",
+    "url": "https://play.google.com/store/apps/details?id=com.cz.centerofproforientioncp&hl=ua"
+  },
+  {"id": "5",
+    "title":  "Мобільний додаток \"Довідник послуг та пільг учасника АТО\"",
+    "url": "https://play.google.com/store/apps/details?id=yuraalexkuch.com.dovidkaato&hl=ua"
+  }
+]

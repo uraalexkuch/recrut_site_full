@@ -1,0 +1,103 @@
+
+
+h2.modulhistory{
+    font-size: 1.8rem;
+    font-weight: bold;
+   color: #005BAA;
+
+ }
+.history .nav-tabs {
+    margin-top: 10px;
+    margin-left: 16px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 10px 10px 20px #333333;
+    border-right: 5px solid #005BAA;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+@media screen and (max-width: 768px) {
+    .card-title{
+        font-size: 16px;
+    }
+    .card-text{
+        font-size: 14px;
+    }
+    .btn.btn.btn-primary{
+        font-size: 14px;
+        width: auto;
+    }
+    .news{
+        font-size: 14px;
+    }
+    .title{
+        font-size: 14px;
+    }
+    .inov{
+        font-size: 1rem;
+
+    }
+    .flex-column.flex-row.nav-justified.nav.nav-tabs {
+        display: block;
+    }
+    .col-sm-3{
+        margin-top:15% ;
+    }
+    .col-sm-8{
+        max-width: 100%;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 100%;
+    }
+    h2.modulhistory{
+        font-size: 1.2rem;
+        color: #005BAA;
+        font-weight: bold;
+    }
+    .card{
+          flex-direction: column;
+          width: 100%;
+      }
+    .history.nav.nav-tabs {
+        display: block;
+    }
+    .history .nav-tabs {
+        display: block;
+    }
+    .historycol{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1536px){
+    .card{
+        flex-direction: column;
+        width: 100%;
+    }
+    .history.nav.nav-tabs {
+        display: block;
+    }
+    .history .nav-tabs {
+        display: block;
+    }
+    .tad-content{
+        margin-left: 0;
+    }
+    .flex-column.flex-row.nav-justified.nav.nav-tabs {
+        display: block;
+    }
+    .card-text {
+        height: auto;
+        width:100% ;
+        font-size: 1.2rem;
+        margin-right: 10px;
+    }
+    .historytext.card-text{
+        max-width:100% ;
+    }
+    .img.history.col-md-6{
+        max-height: 70%;
+    }
+}

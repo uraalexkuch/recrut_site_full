@@ -1,0 +1,125 @@
+.card {
+    flex-direction: row;
+    border-radius: 15px;
+    width: 100%;
+
+}
+.history{
+     font-size: 1.2rem;
+    text-align: center;
+ }
+.card-text{
+flex-grow: 1;
+height: auto;
+width: 100%;
+font-size: 1.2rem;
+text-align: justify;
+margin-left: 10px;
+white-space: pre-wrap;
+font-weight: bold;
+color: rgb(0, 91, 170);
+margin-right: 10px}
+
+img.history.col-md-6{
+    flex-shrink: 1;
+    border-radius: 25px;
+    height: auto;
+    max-width: 100%;
+}
+.comun{
+    flex-direction: row;
+    border-radius: 15px;
+    width: 100%;
+    max-height: 50%;
+
+}
+@media screen and (max-width: 768px) {
+    .card{
+        flex-direction: column;
+        width: 100%;
+    }
+    .comun{
+        flex-direction: column;
+        width: 100%;
+    }
+    img.history.col-md-6{
+        max-width: 100%;
+    }
+    .history{
+        font-size: 1rem;
+        text-align: center;
+    }
+    .card-text{
+        height: auto;
+        width: 100%;
+        font-size: 1rem;
+        margin-right: 10px}
+
+    .nav-tabs .nav-link {
+        display: block;
+    }
+    .tab-pane{
+        font-size: 1rem;
+    }
+    .nav-tabs .nav-link{
+        font-size:1rem ;
+    }
+    .soc{
+        font-size:1rem ;
+    }
+    .tab-content{
+        margin-left:-1.5rem ;
+        margin-right: -1.5rem;
+    }
+    h4{
+        font-size:1rem;
+    }}
+    @media screen and (min-width: 768px) and (max-width: 1536px) {
+        .card{
+            flex-direction: column;
+            width: 100%;
+        }
+        .card-text{
+            height: auto;
+            width: 100%;
+            font-size: 1.2rem;
+           padding-right: 1rem}
+
+        .col-md-6.card-body{
+
+        max-width:100% ;
+    }
+        .col-md-6{
+
+max-width:100% ;
+}
+.card{
+flex-direction: column;
+width: 100%;
+}
+.history.nav.nav-tabs {
+display: block;
+}
+.history .nav-tabs {
+display: block;
+}
+.tad-content{
+margin-left: 0;
+}
+.flex-column.flex-row.nav-justified.nav.nav-tabs {
+display: block;
+}
+.card-text {
+height: auto;
+width:100% ;
+font-size: 1.2rem;
+margin-right: 10px;
+}
+.historytext.card-text{
+max-width:100% ;
+}
+.img.history.col-md-6{
+max-height: 70%;
+}
+
+}

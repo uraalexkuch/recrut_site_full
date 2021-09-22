@@ -1,0 +1,61 @@
+.MainRow {
+  padding-top: 167px;
+}
+
+.Topic {
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 0 0 10px #00276617;
+  border:5px #FFD947 solid;
+  width: 100%;
+}
+
+.Header {
+  padding: 15px 30px;
+  background-color:  #005BAA;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  color:#FFD947;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.Subtitle {
+  color: #005BAA;
+  background-color:  #FFD947;
+  padding: 10px 30px;
+}
+
+.Pagination {
+  padding: 30px;
+}
+
+.Posts {
+  border-top: 2px solid #005BAA;
+  border-bottom: 2px solid #005BAA;
+}
+
+.Posts + .Pagination {
+  border-bottom: 2px solid #005BAA;
+}
+
+.Loading {
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0 0 10px #00276617;
+  width: 100%;
+  padding: 20px;
+}
+
+.Skeleton + .Skeleton {
+  margin-top: 20px;
+}
+
+.PageLoading {
+  padding: 20px;
+}

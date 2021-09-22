@@ -1,0 +1,45 @@
+.LogoContainer {
+  display: flex;
+  align-items: flex-start;
+
+}
+.header {
+  position: absolute;
+  z-index: 99999;
+  width: 90%;
+  background-color: #FFD947;
+  padding: 8px 8px;
+  box-shadow: #FFD947;
+  color: #FFD947;
+  margin-left:25px ;
+
+}
+.Logo {
+  color: #120338;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.5em;
+
+}
+
+.HeaderMenu {
+  margin-top:0 auto ;
+  float: left;
+  color: #120338;
+  font-size: 1em;
+  font-weight: bold;
+  background-color: #FFD947;
+  width: auto;
+border-bottom-right-radius:25px ;
+  border-bottom-left-radius:25px ;
+}
+.ant-layout-header{
+  background-color: #FFD947
+}
+a.forum{
+  margin-left: 5rem;
+  width: 100%;
+  flex-direction: row;
+  font-size: 1.5em;
+  border-radius: 25px;
+}

@@ -1,0 +1,139 @@
+.fun-facts {
+    margin-top: 10px;
+    background-image: url(../Img/fun-facts-bg.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 140px 140px ;
+    color: #fff;
+}
+
+.fun-facts span {
+    text-transform: uppercase;
+    font-size:24px;
+    color: #FFD947;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.fun-facts h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+
+.fun-facts em {
+    font-style: normal;
+    color: #005BAA;
+}
+
+.fun-facts p {
+    color: #FFD947;
+    margin-bottom: 40px;
+    font-size:1.5rem;
+}
+
+.fun-facts .left-content {
+    margin-right: 45px;
+}
+
+.count-area-content {
+    text-align: center;
+    background-color: rgba(250,250,250,0.1);
+    padding: 1rem ;
+    margin: 1rem 0;
+
+    height: auto;
+    border: #FFD947 solid 3px;
+}
+
+.count-digit span {
+    margin: 5px 0;
+    color: #FFD947;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.count-title {
+
+    color: #fff;
+    letter-spacing: 1px;
+    width: initial;
+    height: auto;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+
+
+/* More Info */
+
+.more-info {
+    margin-top: 140px;
+}
+
+.more-info .left-image img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.more-info .right-content span {
+    text-transform: uppercase;
+    font-size: 15px;
+    color:  #FFD947;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.more-info .right-content h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+
+.more-info .right-content em {
+    font-style: normal;
+    color:  #FFD947;
+}
+
+.more-info .right-content p {
+    margin-bottom: 30px;
+}
+@media screen and (max-width: 768px)  {
+
+    .countrow {
+        flex: none;}
+    .fun-facts p {
+
+        margin-bottom: 2rem;
+        font-size:1rem;
+    }
+    .fun-facts h2 {
+        font-size: 1.5rem;
+
+    }
+    .fun-facts {
+               padding: 15% 15%;
+
+    }
+    .count-digit span {
+
+        font-size: 1.2rem;
+    }
+    .count-title {
+
+        font-size: 1.1rem;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1536px) {
+    .fun-facts {
+
+        padding: 40px 40px ;
+
+    }
+
+}

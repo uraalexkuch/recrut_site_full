@@ -1,0 +1,33 @@
+.datting{
+    margin-left:0 ;
+}
+.modulgoogle{
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #FFD947;
+    border-radius: 25px;
+    padding: 5px;
+    color:#FFD947;
+    margin-bottom: 1rem;
+    text-align:center;
+    width: 100%;
+    height: auto;
+    background-color:#005BAA;
+}
+.modulgoogle1{
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #005BAA;
+    border-radius: 25px;
+    padding: 5px;
+    color:#005BAA;
+
+    text-align:center;
+    width: auto;
+    height: auto;
+
+}
