@@ -24,13 +24,13 @@ export default class StartDef extends Component {
                         }}>
                             <h4 className="text-center">Трохи практики: </h4>
                     </span>
-                <CardDeck style={{display:"inline-block"}}>
+                <CardDeck style={{display:"inline-flex"}}>
                     <Card style={{padding:"1%"}}>
                         <TestProfDef/>
                     </Card>
-                    <Card style={{padding:"1%"}}>
+
 <TableTest/>
-                    </Card>
+
 
                 </CardDeck>
 
