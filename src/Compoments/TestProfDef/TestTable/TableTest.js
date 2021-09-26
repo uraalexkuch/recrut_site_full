@@ -14,54 +14,68 @@ let option =
         {value: 4, label: '4'},
 
     ]
-        const average=()=>{
-    return 5 + 2 / 8
-};
+
 
 export default function TableTest(props) {
-    const onCellClick = (rowindex, cellindex) => {
-        console.log('click',rowindex,cellindex)
+    const [data0, setTable0] = useState( [
+        ['Преследователь',0,0,0,0,0,0,0,0,0,0,],
+        ['Грешник',0,0,0,0,0,0,0,0,0,0,],
+        ['Художник',0,0,0,0,0,0,0,0,0,0,],
+        ['Исполнитель',0,0,0,0,0,0,0,0,0,0,],
+        ['Посредник',0,0,0,0,0,0,0,0,0,0,],
+        [' Святой',0,0,0,0,0,0,0,0,0,0,],
+        ['Комик',input(),input(),input(),input(),input(),input(),input(),input(),average(),input(),],
+        ['Наблюдатель',input(),input(),input(),input(),input(),input(),input(),input(),average(),input(),],
+        ['Умник',input(),input(),input(),input(),input(),input(),input(),input(),average(),input(),],
+        [' Победитель',input(),input(),input(),input(),input(),input(),input(),input(),average(),input(),],
+        ['Руководитель',input(),input(),input(),input(),input(),input(),input(),input(),average(),input(),],
+        ['Проигравший',input(),input(),input(),input(),input(),input(),input(),input(),average(),input(),],
+        ['Раненный',input(),input(),input(),input(),input(),input(),input(),input(),average(),input(),],
+        [' Страдалец',input(),input(),input(),input(),input(),input(),input(),input(),average(),input(),],
+        ['Козел отпущения',input(),input(),input(),input(),input(),input(),input(),input(),average(),input(),],
+        ['Трудоголик',input(),input(),input(),input(),input(),input(),input(),input(),average(),input(),],
+        ['Ипохондрик',input(),input(),input(),input(),input(),input(),input(),input(),average(),input(),],
+        ['Эксплуататор',input(),input(),input(),input(),input(),input(),input(),input(),average(),input(),],
+        ['Критик',input(),input(),input(),input(),input(),input(),input(),input(),average(),input(),],
+        ['Не победитель',input(),input(),input(),input(),input(),input(),input(),input(),average(),input(),],
+        ['Соблазнитель(ница)',input(),input(),input(),input(),input(),input(),input(),input(),average(),input(),],
+        ['Исповедник',input(),input(),input(),input(),input(),input(),input(),input(),average(),input(),],
+        ['Целитель',input(),input(),input(),input(),input(),input(),input(),input(),average(),input(),],
+        ['Судья',input(),input(),input(),input(),input(),input(),input(),input(),average(),input(),],
+        ['Консультант',input(),input(),input(),input(),input(),input(),input(),input(),average(),input(),],
+        ['Бог / Богиня',input(),input(),input(),input(),input(),input(),input(),input(),average(),input(),],
+        ['Проповедник',input(),input(),input(),input(),input(),input(),input(),input(),average(),input(),],
+        ['Жертва',input(),input(),input(),input(),input(),input(),input(),input(),average(),input(),],
+        ['Всезнайка',input(),input(),input(),input(),input(),input(),input(),input(),average(),input(),],
+        ['Спасатель',input(),input(),input(),input(),input(),input(),input(),input(),average(),input(),]
 
-    };
 
-    const handleChangeMonth = (search,  rowIndex) => {
-        const onCellClick = (rowindex, cellindex) => {
-            console.log('click2',rowindex,cellindex)
-return [rowindex, cellindex]
-        };
+    ]);
+    const handleChangeMonth = (search, rowindex, cellindex) => {
 
-        const handleCat = (rowIndex, dataIndex) => {
-            const rowTo = rowIndex;
-           console.log(rowTo)
-        };
-        setTable(data[1][1]=search.value)
-       // setTable(data => data[onCellClick.rowindex][ onCellClick.cellindex]=search.value)
+        //  setTable(newData)
+        // setTable(data => data[onCellClick.rowindex][ onCellClick.cellindex]=search.value)
 
-        console.log(`Option selected:`,rowIndex, )
+
+        console.log(`Option selected:`,search.value, rowindex, cellindex, )
         console.log(`Option :`,data)
     };
+    const input=()=>{
 
-  const input=()=>{
-
-      return <Select
-             options={option}
+        return <Select
+            options={option}
 
             // value={option.values}
-             onChange={handleChangeMonth}
+            onChange={handleChangeMonth}
 
 
 
-      />
+        />
 
-  }
+    }
+    const average=()=>{
 
-
-
-
-
-
-
-    //const [responsive, setResponsive] = useState("standard");
+    };
     const [data, setTable] = useState( [
         ['Преследователь',input(),input(),input(),input(),input(),input(),input(),input(),average(),input(),],
         ['Грешник',input(),input(),input(),input(),input(),input(),input(),input(),average(),input(),],
@@ -96,17 +110,36 @@ return [rowindex, cellindex]
 
 
     ]);
-
-
     const columns = ["Роли", "Детство (родительская семья)"," Собственная семья", "Сфера интимных отношений",
         "Профессиональная сфера","Друзья и неформальные группы","Творчество","Досуг","Другие сферы (какие):","Середне значення","Идеал Я"];
+
+
+    const onCellClick = (rowindex, cellindex) => {
+        console.log('click',rowindex,cellindex)
+
+    };
+
+
+
+
+
+
+
+
+
+
+    //const [responsive, setResponsive] = useState("standard");
+
+
+
+
 
 
 
 
     const options = {
         filter: true,
-        //setCellProps:e,
+pagination:false,
         filterType: "dropdown",
         responsive: "simple",
         selectableRows: false,

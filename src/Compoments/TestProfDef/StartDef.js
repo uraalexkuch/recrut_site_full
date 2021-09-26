@@ -3,7 +3,10 @@ import "../Presentaion/Presentaion.css"
 import Card from "react-bootstrap/Card";
 import {CardDeck} from "react-bootstrap";
 import TestProfDef from "./TestProf/TestProfDef";
+
+import TablMD from "./TestTable/TablMD";
 import TableTest from "./TestTable/TableTest";
+
 
 
 
@@ -24,12 +27,14 @@ export default class StartDef extends Component {
                         }}>
                             <h4 className="text-center">Трохи практики: </h4>
                     </span>
-                <CardDeck style={{display:"inline-flex"}}>
+                <CardDeck style={{display:"inline-block"}}>
                     <Card style={{padding:"1%"}}>
                         <TestProfDef/>
                     </Card>
+                     <Card style={{padding:"1%"}}>
+                        <TablMD/>
 
-<TableTest/>
+                    </Card>
 
 
                 </CardDeck>
