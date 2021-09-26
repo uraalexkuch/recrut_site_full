@@ -53,7 +53,7 @@
     "react-chartjs-2": "^2.11.2",
     "react-confetti": "^6.0.0",
     "react-countup": "^4.4.0",
-    "react-datasheet": "^1.4.9",
+
     "react-datepicker": "^3.8.0",
     "react-day-picker": "^7.4.10",
     "react-db-google-sheets": "^2.1.1",

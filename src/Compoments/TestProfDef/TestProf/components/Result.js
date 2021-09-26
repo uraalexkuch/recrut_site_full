@@ -41,7 +41,7 @@ export default class Result extends Component {
         let id = this.parseJwt();
         const means = (this.props.quizResult[1]);
         const target = (this.props.quizResult[0]);
-        let resultfull = ` Ролевая гибкость и чувствительность: ${target}, 
+        let resultfull = ` Ролевая гибкость и чувствительность: ${target}\n,
          Ролевая глубина и способность к ролевым переживаниям: ${means} `
         this.setState({
                 resultfull: {
@@ -67,7 +67,7 @@ export default class Result extends Component {
                     swal("Error!");
                 }
             );
-        console.log(this.state.resultfull)
+        console.log(resultfull)
     }
     componentDidMount() {
         this.setResult()

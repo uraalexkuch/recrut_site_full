@@ -120,20 +120,79 @@ export default class ResultTesting extends Component {
                             }}>
                                 <h3 className="history col-10">Мої результати тестування
                                 </h3>
+                                <Row fluid style={{
+                                    maxWidth: "100%",
+                                    height: "auto",
+                                    marginLeft: "5%",
+                                    marginRight: "5%",
+                                }}> <Col md={2} style={{
+                                    fontSize: "18 px",
+                                    fontWeight: "bold",
+                                    borderStyle: "solid",
+                                    borderWidth: "5px",
+                                    borderColor: "#FFD947",
+                                    padding: "5px",
+                                    marginBottom: "1rem"
+                                }}>
+                                    <label>Назва тесту</label>
+                                </Col>
+                                    <Col  style={{
+                                        fontSize: "18 px",
+                                        fontWeight: "bold",
+                                        borderStyle: "solid",
+                                        borderWidth: "5px",
+                                        borderColor: "#FFD947",
+                                        padding: "5px",
+                                        marginBottom: "1rem",  textAlign: "center",
+                                    }}>
+                                        <label>Результат тестування: </label>
+                                    </Col>
+                                    <Col md={2} style={{
+                                        fontSize: "18 px",
+                                        fontWeight: "bold",
+                                        borderStyle: "solid",
+                                        borderWidth: "5px",
+                                        borderColor: "#FFD947",
+                                        padding: "5px",
+                                        marginBottom: "1rem",
+                                        textAlign: "center",
+                                    }}>
+                                        <label>Дата тестування:
+                                        </label>
+                                    </Col>
+                                </Row>
+
                                 {this.state.resultfull.map((testing, id) => {
                                         console.log({testing})
                                         return (
+
                                             <div key={id}
                                                  style={{
                                                      borderRadius: "15px",
                                                      width: "100%",
-                                                     maxHeight: "50%",
+                                                     //maxHeight: "50%",
                                                  }}>
                                                 <Row fluid style={{
                                                     maxWidth: "100%",
                                                     height: "auto",
-                                                    marginLeft: "15%",
+                                                    marginLeft: "5%",
                                                     marginRight: "15%",
+                                                    paddingTop:"0"
+                                                }}>
+                                                    {testing.nameTest == "Фінальний іспит"?
+                                                        <Col md={2} >
+                                                            <Button className="btn" onClick={this.getCert} style={{
+                                                                width: "auto",
+                                                                height: "auto",
+                                                                marginLeft: "1rem%",
+                                                            }}>Завантажити сертифікат</Button>
+                                                        </Col >:""}
+                                                </Row>
+                                                <Row fluid style={{
+                                                    maxWidth: "100%",
+                                                    height: "auto",
+                                                    marginLeft: "5%",
+                                                    marginRight: "5%",
                                                 }}>
                                                     <Col md={2} style={{
                                                         fontSize: "18 px",
@@ -148,18 +207,8 @@ export default class ResultTesting extends Component {
                                                         <label>{testing.nameTest}</label>
                                                     </Col>
                                                     <hr/>
-                                                    <Col md={2} style={{
-                                                        fontSize: "18 px",
-                                                        fontWeight: "bold",
-                                                        borderStyle: "solid",
-                                                        borderWidth: "5px",
-                                                        borderColor: "#FFD947",
-                                                        padding: "5px",
-                                                        marginBottom: "1rem"
-                                                    }}>
-                                                        <label>Результат тестування: </label>
-                                                    </Col>
-                                                    <Col md={3} style={{
+
+                                                    <Col  style={{
                                                         fontSize: "18 px",
                                                         fontWeight: "bold",
                                                         borderStyle: "solid",
@@ -167,23 +216,13 @@ export default class ResultTesting extends Component {
                                                         borderColor: "#005BAA",
                                                         borderRadius:"25px",
                                                         padding: "5px",
-                                                        marginBottom: "1rem"
+                                                        marginBottom: "1rem",
+                                                        textAlign: "center",
                                                     }}>
                                                         {testing.result}
 
                                                     </Col>
-                                                    <Col md={2} style={{
-                                                        fontSize: "18 px",
-                                                        fontWeight: "bold",
-                                                        borderStyle: "solid",
-                                                        borderWidth: "5px",
-                                                        borderColor: "#FFD947",
-                                                        padding: "5px",
-                                                        marginBottom: "1rem"
-                                                    }}>
-                                                        <label>Дата тестування:
-                                                        </label>
-                                                    </Col>
+
                                                     <Col md={2} style={{
                                                         fontSize: "18 px",
                                                         fontWeight: "bold",
@@ -198,23 +237,7 @@ export default class ResultTesting extends Component {
                                                     </Col>
 
                                                 </Row>
-                                                <Row fluid style={{
-                                                    maxWidth: "100%",
-                                                    height: "auto",
-                                                    marginLeft: "15%",
-                                                    marginRight: "15%",
-                                                    paddingTop:"0"
-                                                }}>
-                                                {testing.nameTest == "Фінальний іспит"?
-                                                    <Col md={2} >
-                                                        <Button className="btn" onClick={this.getCert} style={{
-                                                            width: "auto",
-                                                            height: "auto",
 
-                                                            marginLeft: "1rem%",
-                                                        }}>Завантажити сертифікат</Button>
-                                                    </Col >:""}
-                                                    </Row>
                                             </div>)
                                     }
                                 )

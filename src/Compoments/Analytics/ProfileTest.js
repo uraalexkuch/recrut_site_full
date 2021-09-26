@@ -57,13 +57,13 @@ console.log(idtest)
         this.getTest(id)
         console.log(id)
     }
-    componentDidUpdate(prevProps, prevState) {
+    /*componentDidUpdate(prevProps, prevState) {
         if (prevState.resultfull !== this.state.resultfull) {
             let id = this.props.id[0];
             this.getTest(id)
             console.log('фильтер таки поменялся)).')
         }
-    }
+    }*/
     render() {
         let test = this.state.resultfull;
         let userInfo = JSON.parse(localStorage.getItem("userInfo"));
@@ -77,20 +77,20 @@ console.log(idtest)
                     }}>
                         <h3 className="history col-10">{this.props.id[1]} - результати тестування
                         </h3>
-                        {this.state.resultfull.map((testing, id) => {
+                        {test.map((testing, id) => {
                               //  console.log({testing})
                                 return (
                                     <div key={id}
                                          style={{
                                              borderRadius: "15px",
                                              width: "100%",
-                                             maxHeight: "50%",
+                                            // maxHeight: "50%",
                                          }}>
                                         <Row fluid style={{
                                             maxWidth: "100%",
                                             height: "auto",
-                                            marginLeft: "10%",
-                                            marginRight: "10%",
+                                            marginLeft: "5%",
+                                            marginRight: "5%",
                                         }}>
                                             <Col md={2} style={{
                                                 fontSize: "18 px",
@@ -105,7 +105,7 @@ console.log(idtest)
                                                 <label>{testing.nameTest}</label>
                                             </Col>
                                             <hr/>
-                                            <Col md={2} style={{
+                                            <Col  style={{
                                                 fontSize: "18 px",
                                                 fontWeight: "bold",
                                                 borderStyle: "solid",

@@ -16,8 +16,8 @@ export default class StartDef extends Component {
     render() {
         return (
             <div style={{
-                marginLeft: "15%",
-                marginRight: "15%"
+                marginLeft: "5%",
+                marginRight: "10%"
             }}>
                         <span style={{
                             textAlign: "justify",

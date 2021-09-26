@@ -37,7 +37,7 @@ export default class AnaliticUsers extends Component {
         const stat = this.state.showCard
         return (
             <Card className="content-header" style={{
-                flexDirection: "column", paddingTop: "1rem"
+                flexDirection: "column", paddingTop: "0.5rem"
             }}>
 
                 {stat
@@ -66,8 +66,8 @@ export default class AnaliticUsers extends Component {
                                             borderColor: "#005BAA",
                                             borderRadius: "25px",
                                             padding: "5px",
-                                            marginBottom: "1rem",
-                                            marginRight: "1rem",
+                                            marginBottom: "0.5rem",
+                                            marginRight: "0.5rem",
                                             textAlign: "center",
                                             width: "auto",
                                             height: "60%"
@@ -85,8 +85,8 @@ export default class AnaliticUsers extends Component {
                                             borderWidth: "5px",
                                             borderColor: "#FFD947",
                                             padding: "5px",
-                                            marginBottom: "1rem",
-                                            marginRight: "1rem",
+                                            marginBottom: "0.5rem",
+                                            marginRight: "0.5rem",
                                             width: "auto",
                                             height: "60%"
                                         }}>
@@ -100,8 +100,8 @@ export default class AnaliticUsers extends Component {
                                             borderColor: "#005BAA",
                                             borderRadius: "25px",
                                             padding: "5px",
-                                            marginBottom: "1rem",
-                                            marginRight: "1rem",
+                                            marginBottom: "0.5rem",
+                                            marginRight: "0.5rem",
                                             textAlign: "center",
                                             width: "100%",
                                             height: "60%"
@@ -116,8 +116,8 @@ export default class AnaliticUsers extends Component {
                                             borderWidth: "5px",
                                             borderColor: "#FFD947",
                                             padding: "5px",
-                                            marginBottom: "1rem",
-                                            marginRight: "1rem",
+                                            marginBottom: "0.5rem",
+                                            marginRight: "0.5rem",
                                             width: "auto",
                                             height: "60%"
                                         }}>
@@ -132,8 +132,8 @@ export default class AnaliticUsers extends Component {
                                             borderColor: "#005BAA",
                                             borderRadius: "25px",
                                             padding: "5px",
-                                            marginBottom: "1rem",
-                                            marginRight: "1rem",
+                                            marginBottom: "0.5rem",
+                                            marginRight: "0.5rem",
                                             textAlign: "center",
                                             width: "auto",
                                             height: "60%"
@@ -147,8 +147,8 @@ export default class AnaliticUsers extends Component {
                                             borderWidth: "5px",
                                             borderColor: "#FFD947",
                                             padding: "5px",
-                                            marginBottom: "1rem",
-                                            marginRight: "1rem",
+                                            marginBottom: "0.5rem",
+                                            marginRight: "0.5rem",
                                             width: "auto",
                                             height: "60%"
                                         }}>
@@ -163,15 +163,15 @@ export default class AnaliticUsers extends Component {
                                             borderColor: "#005BAA",
                                             borderRadius: "25px",
                                             padding: "0.5rem",
-                                            marginBottom: "1rem",
-                                            marginRight: "1rem",
+                                            marginBottom: "0.5rem",
+                                            marginRight: "0.5rem",
                                             textAlign: "center",
                                             width: "auto",
                                             height: "60%"
                                         }}>
                                             {user.testing.length}
                                         </Col>
-                                        <Col>
+                                        <Col >
                                             <Button
                                                 onClick={() => this.searchID([user._id, user.surname])}
                                                 style={{
@@ -179,7 +179,7 @@ export default class AnaliticUsers extends Component {
                                                     height: "auto",
                                                     borderRadius: "25px",
                                                     marginTop: "0",
-                                                    marginBottom: "1rem"
+                                                    marginBottom: "0.5rem"
                                                 }}>
                                                 Переглянути тести
                                             </Button>

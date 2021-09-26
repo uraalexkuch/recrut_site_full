@@ -1,0 +1,23 @@
+.table thead th {
+    vertical-align: top;
+    border-bottom: 2px solid #dee}
+.table-responsive {
+    display: inline-table;
+    width: 100%;
+    /* overflow-x: auto; */
+    -webkit-overflow-scrolling: touch;
+}
+.table td, .table th {
+
+     padding: .2rem;
+     vertical-align: top;
+     border-top: 1px solid #dee2e6;
+    text-align: center;}
+.table thead th {
+    vertical-align: top;
+    font-weight: bold;
+    border-bottom: 2px solid #dee;
+    word-wrap: break-word;
+    text-align: justify-all;
+    font-size: 14px;
+}
