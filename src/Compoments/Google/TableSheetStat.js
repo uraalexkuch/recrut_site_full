@@ -30,7 +30,7 @@ const options =
         {value: 'Слов\'янський МЦЗ', label: 'СЛОВ\'ЯНСЬКИЙ МІСЬКИЙ ЦЕНТР ЗАЙНЯТОСТІ'},
         {value: 'Вугледарський МЦЗ', label: 'ВУГЛЕДАРСЬКИЙ МІСЬКИЙ ЦЕНТР ЗАЙНЯТОСТІ'},
         {value: 'Олександрівський РЦЗ', label: 'ОЛЕКСАНДРІВСЬКИЙ РАЙОННИЙ ЦЕНТР ЗАЙНЯТОСТІ '},
-        {value: 'В.Новосілківський РЦЗ', label: 'ВЕЛИКОНОВОСІЛЬКІВСЬКИЙ РАЙОННИЙ ЦЕНТР ЗАЙНЯТОСТІ '},
+        {value: 'В.Новосілківський РЦЗ', label: 'ВЕЛИКОНОВОСІЛКІВСЬКИЙ РАЙОННИЙ ЦЕНТР ЗАЙНЯТОСТІ '},
         {value: 'Волноваський РЦЗ', label: 'ВОЛНОВАСЬКИЙ РАЙОННИЙ ЦЕНТР ЗАЙНЯТОСТІ '},
         {value: 'Нікольський РЦЗ', label: 'НІКОЛЬСЬКИЙ РАЙОННИЙ ЦЕНТР ЗАЙНЯТОСТІ'},
         {value: 'Мар\'їнський РЦЗ', label: 'МАР\'ЇНСЬКИЙ РАЙОННИЙ ЦЕНТР ЗАЙНЯТОСТІ'},
@@ -854,14 +854,18 @@ export default class TableSheetStat extends Component {
                                          style={{
                                              paddingTop: "2rem"
                                          }}>
-                                        <Col md={3} className="modulstat">
+                                        <Col md={2} className="modulstat">
                                             <label>Кількість вакансій за 3ПН,од.</label>
+                                        </Col>
+                                        <Col md={2}
+                                             className="modulstat">
+                                            <label>Кількість укомплектованних вакансій ,од </label>
                                         </Col>
                                         <Col md={2}
                                              className="modulstat">
                                             <label>Рівень укомплектування,% </label>
                                         </Col>
-                                        <Col md={3} className="modulstat">
+                                        <Col md={2} className="modulstat">
                                             <label>Направлено на навчання,осіб</label>
                                         </Col>
                                         <Col md={2}
@@ -874,14 +878,18 @@ export default class TableSheetStat extends Component {
                                         </Col>
                                     </Row>
                                     <Row className="datting">
-                                        <Col md={3} className="modulstat">
+                                        <Col md={2} className="modulstat">
                                             <label>{this.filter3PN()}</label>
+                                        </Col>
+                                        <Col md={2}
+                                             className="modulstat">
+                                            <label>{this.filterUkomp()}</label>
                                         </Col>
                                         <Col md={2}
                                              className="modulstat">
                                             <label>{this.getTableStatUkomp()}</label>
                                         </Col>
-                                        <Col md={3} className="modulstat">
+                                        <Col md={2} className="modulstat">
                                             <label>{this.filterNavch()}</label>
                                         </Col>
                                         <Col md={2}
