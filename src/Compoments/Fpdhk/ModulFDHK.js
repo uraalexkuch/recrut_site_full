@@ -13,10 +13,11 @@ import VideoFDHK4 from "./VideoFDHK4";
 import VideoFDHK5 from "./VideoFDHK5";
 import VideoFDHK6 from "./VideoFDHK6";
 import VideoFDHK7 from "./VideoFDHK7";
-import VideoFDHK9 from "./VideoFDHK8";
+import VideoFDHK8 from "./VideoFDHK8";
+import VideoFDHK9 from "./VideoFDHK9";
 import VideoFDHK10 from "./VideoFDHK10";
 import VideoFDHK11 from "./VideoFDHK11";
-import VideoFDHK8 from "./VideoFDHK8";
+
 
 
 export default class ModulFDHK extends Component {
