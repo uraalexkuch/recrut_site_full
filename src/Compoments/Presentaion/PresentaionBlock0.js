@@ -50,7 +50,7 @@ export default class PresentaionBlock0 extends Component {
 
                                     </Card.Body>
                                     <img  className="history col-md-6"
-                                              src={process.env.PUBLIC_URL+presentation.imageUrl}
+                                              src={process.env.PUBLIC_URL +presentation.imageUrl}
                                               alt="Card image cap"
                                     />
                                 </Card>

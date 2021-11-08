@@ -21,6 +21,7 @@ import StartLogingPhone from "../TelephoneCommunucation/StartLogingPhone";
 
 import StartLogingTime from "../TestTime/StartLogingTime";
 import StartLogingProf from "../TestProfDef/StartLogingProf";
+import StartLogingEmotion from "../TestEmotion/StartLogingEmotion";
 /*const Home = lazy(() =>import( "../../Pages/Home"));
 const Tabs = lazy(() =>import( "../Tabs"));
 const TestFinalyty = lazy(() =>import( "../TestFinality/TestFinalyty"));
@@ -83,7 +84,7 @@ export default class Header extends Component {
                             <NavDropdown title="Тести" id="collasible-nav-dropdown">
                                 <NavDropdown.Item href="/recruting/time">Тести до "Тайм-менеджменту"</NavDropdown.Item>
                                 <NavDropdown.Item href="/recruting/profdef">Тест до "Професійна<br/> деформація особистості" </NavDropdown.Item>
-
+                                <NavDropdown.Item href="/recruting/emotion">Тести до «Діагностика емоційного<br/>  рівня професійної дфяльності» </NavDropdown.Item>
                             </NavDropdown>
 
                         </Nav>
@@ -104,6 +105,7 @@ export default class Header extends Component {
                             <Route excat path="/recruting/analytics" component={StartAnalytic}/>
                             <Route excat path="/recruting/sheets" component={StartGoogle}/>
                             <Route excat path="/recruting/time" component={StartLogingTime}/>
+                            <Route excat path="/recruting/emotion" component={StartLogingEmotion}/>
                             <Route excat path="/recruting/profdef" component={StartLogingProf}/>
                             <Route excat path="/recruting/" component={Home}/>
                         </Switch>
