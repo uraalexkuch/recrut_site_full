@@ -2,10 +2,10 @@ import React, {Component} from "react";
 
 import "../Presentaion/Presentaion.css"
 import TestEmotionBurn from "./TestEmotionBurn/TestEmotionBurn";
-import TestTimeType from "./TestTimeType/TestTimeType";
-import TestTarget from "./TestTarget/TestTarget";
+
 import Card from "react-bootstrap/Card";
 import {CardDeck} from "react-bootstrap";
+import TestEmotionBrain from "./TestEmotionBrain/TestEmotionBrain";
 
 export default class StartEmotion extends Component {
 
@@ -29,11 +29,9 @@ export default class StartEmotion extends Component {
                         <TestEmotionBurn/>
                     </Card>
                     <Card style={{padding:"1%"}}>
-                        <TestTimeType/>
+                        <TestEmotionBrain/>
                     </Card>
-                    <Card style={{padding:"1%"}}>
-                        <TestTarget/>
-                    </Card>
+
                 </CardDeck>
 
             </div>)

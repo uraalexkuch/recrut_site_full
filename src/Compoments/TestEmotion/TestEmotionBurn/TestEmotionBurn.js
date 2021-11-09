@@ -11,7 +11,6 @@ export default class TestEmotionBurn   extends Component {
     constructor(props) {
         super(props);
         this.state = {
-
             counter: 0,
             questionId: 1,
             question: ``,
@@ -81,7 +80,7 @@ export default class TestEmotionBurn   extends Component {
         });
     }
 
-    getResults() {
+    getResults=()=> {
         const answersCount = this.state.answersCount;
         const answersCountKeys = Object.keys(answersCount);
         const answersCountValuesOld = answersCountKeys.map(key => answersCount[key]);
@@ -92,37 +91,31 @@ export default class TestEmotionBurn   extends Component {
         const pshyho = answersCount.Редукция_профессиональных_обязанностей;
         const person = answersCount.Личностная_отстраненность_деперсонализация;
         const emo = answersCount.Эмоциональная_отстраненность;
-        const maxAnswerCount = Math.max.apply(null, answersCountValues);
-        console.log(answersCount);
-        console.log(answersCount.Неудовлетворенность_собой);
-        console.log(answersCount.Загнанность_в_клетку);
-        console.log(answersCount.Редукция_профессиональных_обязанностей);
-        console.log(answersCount.Личностная_отстраненность_деперсонализация);
-        console.log(answersCount.Личностная_отстраненность_деперсонализация);
-        console.log(answersCount.мусор);
-        console.log(answersCountValuesOld);
-        console.log(answersCountValues);
-        console.log(  answersCountKeys.filter(key => answersCount[key] === maxAnswerCount));
+         const maxAnswerCount = Math.max.apply(null, answersCountValues);
+        /* console.log(answersCount);
+         console.log(answersCount.Неудовлетворенность_собой);
+         console.log(answersCount.Загнанность_в_клетку);
+         console.log(answersCount.Редукция_профессиональных_обязанностей);
+         console.log(answersCount.Личностная_отстраненность_деперсонализация);
+         console.log(answersCount.Личностная_отстраненность_деперсонализация);
+         console.log(answersCount.мусор);
+         console.log(answersCountValuesOld);
+         console.log(answersCountValues);
+         console.log(  answersCountKeys.filter(key => answersCount[key] === maxAnswerCount));*/
         return [ extra,nejro,pshyho,person,emo,answersCountKeys.filter(key => answersCount[key] === maxAnswerCount),
         ]
     }
 
-
     setResults(result) {
-        //  const resultFull={[0][1],[2],[3]}
-        // if (result.length === 1) {
-        this.setState({ result:result});
-        //} else {
-        //this.setState({ result: 'Undetermined' });
-        //}/
-        console.log(result);
+          this.setState({ result:result});
+           console.log(result);
     }
     newTest = () =>{
         this.setState({
             counter: 0,
             questionId: 1,
             question: ``,
-            //answerOptions: [],
+            answerOptions: [],
             answer: '',
             answersCount: {},
             result: ''
@@ -140,10 +133,8 @@ export default class TestEmotionBurn   extends Component {
             />
         );
     }
-
     renderResult() {
         return <Result quizResult={this.state.result} />;
-
     }
 
     render() {
@@ -165,7 +156,6 @@ export default class TestEmotionBurn   extends Component {
                     flexShrink: "1",
                     fontWeight: "bold",
                     marginLeft: "25%",
-
                     width:"auto"
                 }}
                     onClick={this.newTest}
