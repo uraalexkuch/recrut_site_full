@@ -84,7 +84,7 @@ export default class Header extends Component {
                             <NavDropdown title="Тести" id="collasible-nav-dropdown">
                                 <NavDropdown.Item href="/recruting/time">Тести до "Тайм-менеджменту"</NavDropdown.Item>
                                 <NavDropdown.Item href="/recruting/profdef">Тест до "Професійна<br/> деформація особистості" </NavDropdown.Item>
-                                <NavDropdown.Item href="/recruting/emotion">Тести до «Діагностика емоційного<br/>  рівня професійної дфяльності» </NavDropdown.Item>
+                                <NavDropdown.Item href="/recruting/emotion">Тести до «Діагностика емоційного<br/>  рівня професійної діяльності» </NavDropdown.Item>
                             </NavDropdown>
 
                         </Nav>

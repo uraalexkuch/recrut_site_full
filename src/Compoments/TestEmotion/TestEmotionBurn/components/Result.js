@@ -50,7 +50,7 @@ export default class Result extends Component {
         const sim4 = this.props.quizResult[4];
         const sim41 = this.props.quizResult[4] >= 16 ? "сложившийся симптом" : this.props.quizResult[4] <= 15 && this.props.quizResult[4] >= 10 ? "складывающийся симптом" : "несложившийся симптом";
        const allsim= (this.props.quizResult[0] + this.props.quizResult[1] + this.props.quizResult[2] + this.props.quizResult[3] + this.props.quizResult[4])<= 45?"отсутствиe «выгорания»"
-           :(this.props.quizResult[0] + this.props.quizResult[1] + this.props.quizResult[2] + this.props.quizResult[3] + this.props.quizResult[4])<=46 && (this.props.quizResult[0] + this.props.quizResult[1] + this.props.quizResult[2] + this.props.quizResult[3] + this.props.quizResult[4])<= 75
+           :(this.props.quizResult[0] + this.props.quizResult[1] + this.props.quizResult[2] + this.props.quizResult[3] + this.props.quizResult[4])>=46 && (this.props.quizResult[0] + this.props.quizResult[1] + this.props.quizResult[2] + this.props.quizResult[3] + this.props.quizResult[4])<= 79
                ?"начинающееся «выгорание»":"имеется «выгорание»."
         let resultfull = `Симптом Неудовлетворенность собой : ${sim0},степень развития: ${sim01} ,
         Симптом Загнанность в клетку : ${sim1},степень развития: ${sim11},
@@ -158,7 +158,7 @@ export default class Result extends Component {
                     <br/>
                     Состояние выгорания:<h4
                     style={{color: "red"}}>  {(this.props.quizResult[0] + this.props.quizResult[1] + this.props.quizResult[2] + this.props.quizResult[3] + this.props.quizResult[4])<= 45?"отсутствиe «выгорания»"
-                    :(this.props.quizResult[0] + this.props.quizResult[1] + this.props.quizResult[2] + this.props.quizResult[3] + this.props.quizResult[4])<=46 && (this.props.quizResult[0] + this.props.quizResult[1] + this.props.quizResult[2] + this.props.quizResult[3] + this.props.quizResult[4])<= 75
+                    :(this.props.quizResult[0] + this.props.quizResult[1] + this.props.quizResult[2] + this.props.quizResult[3] + this.props.quizResult[4])>=46 && (this.props.quizResult[0] + this.props.quizResult[1] + this.props.quizResult[2] + this.props.quizResult[3] + this.props.quizResult[4])<= 75
                     ?"начинающееся «выгорание»":"имеется «выгорание»."}</h4>
 
                     <br/>

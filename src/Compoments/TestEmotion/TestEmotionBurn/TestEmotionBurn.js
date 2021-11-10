@@ -92,16 +92,6 @@ export default class TestEmotionBurn   extends Component {
         const person = answersCount.Личностная_отстраненность_деперсонализация;
         const emo = answersCount.Эмоциональная_отстраненность;
          const maxAnswerCount = Math.max.apply(null, answersCountValues);
-        /* console.log(answersCount);
-         console.log(answersCount.Неудовлетворенность_собой);
-         console.log(answersCount.Загнанность_в_клетку);
-         console.log(answersCount.Редукция_профессиональных_обязанностей);
-         console.log(answersCount.Личностная_отстраненность_деперсонализация);
-         console.log(answersCount.Личностная_отстраненность_деперсонализация);
-         console.log(answersCount.мусор);
-         console.log(answersCountValuesOld);
-         console.log(answersCountValues);
-         console.log(  answersCountKeys.filter(key => answersCount[key] === maxAnswerCount));*/
         return [ extra,nejro,pshyho,person,emo,answersCountKeys.filter(key => answersCount[key] === maxAnswerCount),
         ]
     }
