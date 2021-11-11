@@ -44,7 +44,7 @@ export default class TestEmotionBrain extends Component {
         console.log(event.currentTarget)
         this.setUserAnswer(event.currentTarget.value);
         if (this.state.questionId < quizQuestionsTempTwo.length) {
-          //  console.log(quizQuestionsTempTwo.length)
+
             setTimeout(() => this.setNextQuestion(), 0);
         } else {
             setTimeout(() => this.setResults(this.getResults()), 0);
