@@ -62,8 +62,8 @@ export default class Team extends Component {
                     marginRight: "5%",
                     marginLeft:"5%"
                 }} >
-                <div className="card-horizontal col-6 ">
-                    <Card   style={{
+                <div className="card-horizontal col-6  ">
+                    <Card  className="adcard" style={{
                         orderRadius: "25px",
                         height: "auto",
                         border:" #005BAA solid 5px",
@@ -87,7 +87,7 @@ export default class Team extends Component {
                 </div>
 
                 <div className="card-horizontal col-6 ">
-                    <Card  style={{
+                    <Card className="klcard" style={{
                         borderRadius: "25px",
                         height: "auto",
                         border:" #005BAA solid 5px",

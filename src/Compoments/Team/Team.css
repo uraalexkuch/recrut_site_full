@@ -145,7 +145,72 @@ q {
 }
 
 /* Display the columns below each other instead of side by side on small screens */
+@media screen and (min-width: 768px) and (max-width: 1536px) {
+    .shef.card-img {
+        flex-shrink: 1;
+        border-radius: 25px;
+        height: 350px;
+        width: 300px;
+        padding: 5px;
+    }
+    .sheftitle.card-title.h5 {
+        padding-top: 0;
+        font-size:1.8rem;
+        font-weight: bold;
+        color: #005BAA;
+    }
+    .sheftext.card-text {
+        flex-grow: 1;
+        width: 100%;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #005BAA;
+    }
+    .sigh {
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: #005BAA;
+        text-indent: 5rem;
+    }
+    .card-img {
+        flex-shrink: 1;
+        border-radius: 5px;
+        height: 300px;
+        width: 200px;
+        padding: 5px;
 
+    }
+    .ad {
+        margin-left: 3%;
+        margin-right: 3%;
+        flex-wrap: wrap;
+        padding-right: 1rem;
+    }
+    .adcard.card{
+        flex-direction: row;
+    }
+    .ad.card-title.h5 {
+        padding-top: 0;
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: #005BAA;
+    }
+    .ad.card-text {
+        flex-grow: 1;
+        height: auto;
+        width: 100%;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #005BAA;
+    }
+    .shef.card {
+        flex-direction: row;
+    }
+    .klcard.card{
+        flex-direction: row;
+        width: 110%;
+    }
+}
 @media screen and (max-width: 768px) {
     .teamTitle {
         font-size: 1.5rem;
@@ -241,21 +306,7 @@ q {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1536px) {
-    .shef.card-img {
-        flex-shrink: 1;
-        border-radius: 25px;
-       max-height: 500px;
-        max-width: 350px;
-        padding: 5px;
-    }
-    .sigh {
-        font-size: 1.3rem;
-        font-weight: bold;
-        color: #005BAA;
-        text-indent: 5rem;
-    }
-}
+
 
 
 

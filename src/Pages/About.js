@@ -14,7 +14,7 @@ export default class About extends Component {
 <div>
 
         <HeroAbout/>
-    <Row  style={{
+    <Row className="lineyellow" style={{
         fontSize:"24px",
         fontWeight:"bold",
         color:"#005BAA",
