@@ -32,7 +32,7 @@ export default class Team2 extends Component {
                                 <Card.Img variant="down"
                                           src={team1} />
                                 <Card.Body>
-                                    <Card.Title>Жигайло Надія Анатоліївна</Card.Title>
+                                    <Card.Title className="cardtitle">Жигайло Надія Анатоліївна</Card.Title>
                                     <Card.Text className="teamtext" >
                                         Начальник відділу
                                     </Card.Text>
@@ -46,7 +46,7 @@ export default class Team2 extends Component {
                                 boxShadow: " 0 0 10px #333333"
                             }}>
                                 <Card.Body >
-                                    <Card.Title>Надєйкіна
+                                    <Card.Title className="cardtitle ">Надєйкіна
                                         Ольга Вікторівна
                                     </Card.Title>
                                     <Card.Text className="teamtext">
@@ -78,7 +78,7 @@ export default class Team2 extends Component {
                                 <Card.Img variant="down"
                                           src={team3}/>
                                 <Card.Body>
-                                    <Card.Title>Суровикіна
+                                    <Card.Title className="cardtitle">Суровикіна
                                         Вікторія Юріївна
                                     </Card.Title>
                                     <Card.Text className="teamtext" >
@@ -94,7 +94,7 @@ export default class Team2 extends Component {
                                 boxShadow: " 0 0 10px #333333"
                             }}>
                                 <Card.Body >
-                                    <Card.Title>Сальник
+                                    <Card.Title className="cardtitle">Сальник
                                         Ганна Юріївна
 
                                     </Card.Title>

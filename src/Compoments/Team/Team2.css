@@ -115,18 +115,25 @@ h2 {
         height: 200px;
         width: 150px;
     }
-    .DownTeam.col-3.card{
-width: 110%;
-        flex-flow: row ;
-        height: auto;
-    }
+
     .DownTeam .card-img-top{
         height: 200px;
         width: 150px;
     }
     .DownTeam.col-3.card{
-        width: 110%;
+        width: auto;
         flex-flow: row ;
         height: auto;
+        margin-bottom: 3%;
+    }
+    .card-title {
+        font-size: 1.2rem;
+    }
+    .teamtext {
+        text-align: center;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #005BAA;
+
     }
 }
