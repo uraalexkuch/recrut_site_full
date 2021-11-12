@@ -39,6 +39,7 @@ setTable=()=>{
          const load=this.state.load
         return (
             <div>
+
                 {load?<TableData data={this.state.table} />:"Waiting"}
             </div>
         );

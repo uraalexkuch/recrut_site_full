@@ -9,7 +9,7 @@ export default class CardCaruosel extends Component {
             <>
 
                 <div style={{
-                   // height: "100vh",
+                    height: "100vh",
                     width: "80vw",
                 }}>
 

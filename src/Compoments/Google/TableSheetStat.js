@@ -10,6 +10,7 @@ import Pie from "./Pie";
 
 import TableSpisokPou from "./TableSpisokPou"
 import AnaliticProfes from "../Analytics/AnaliticProfes";
+import TableSpisokPouAll from "./TableSpisokPouAll";
 
 
 const options =
@@ -72,14 +73,17 @@ export default class TableSheetStat extends Component {
         this.setState({
             showModuls: !this.state.showModuls,
             showBack: !this.state.showBack,
+            showProf:false,
         })
     }
-    selectStatProf = () => {
-        this.setState({showModuls: !this.state.showModuls,
-            showProf: !this.state.showProf,
-            showBack: !this.state.showBack,
+    selectStatVac = () => {
+        this.setState({
+            showModuls:false,
+            showBack: true,
+            showProf:true,
         })
     }
+
     choiceBack = () => {
         const start = this.state.table;
         this.setState({
@@ -195,7 +199,7 @@ export default class TableSheetStat extends Component {
         this.setState({
             tablhire: this.state.table === null ? data0 : filtredTest,
         })
-        //console.log(this.state.tablhire)
+        console.log(this.state.tablhire)
 
         this.filterHireMeetyes()
     }
@@ -440,6 +444,7 @@ export default class TableSheetStat extends Component {
                 }
             }
         )
+     // console.log(filterUkomp3)
         return (filterUkomp3.length)
     }
     getTableStatUkomp = () => {
@@ -542,9 +547,6 @@ export default class TableSheetStat extends Component {
             tablposad:  filtredProf,
         })
 
-      //  console.log("posad:"+this.state.tablposad)
-      //  console.log("posad0:"+ this.state.tablhire.length)
-
     }
 
     renderResult() {
@@ -585,22 +587,17 @@ export default class TableSheetStat extends Component {
 
     componentDidMount() {
         this.getTable()
-       // this.getPosad()
-       // console.log( this.state.tablposad)
+
     }
 
     render() {
-        // console.log(this.state.search)
-        //  console.log(this.state.tablhire)
-        const stat = this.state.showModuls
+           const stat = this.state.showModuls
         const prof=this.state.showProf
-        const back = this.state.showBack
-
-        const {search} = this.state;
+             const back = this.state.showBack
+               const {search} = this.state;
         let userInfo = JSON.parse(localStorage.getItem("userInfo"));
         return (
             <div>
-
                 <div>
                     <div>
                         {
@@ -664,7 +661,8 @@ export default class TableSheetStat extends Component {
                                 <div style={{
                                     marginLeft: "1%"
                                 }}>
-                                   <Row> <Col md={3}>
+                                   <Row>
+                                       <Col md={3}>
                                         <Button className="btn" onClick={this.selectStat} style={{
                                             width: "auto",
                                             height: "auto",
@@ -673,6 +671,15 @@ export default class TableSheetStat extends Component {
                                             marginLeft: "1rem",
                                         }}>Переглянути список роботодавців</Button>
                                     </Col>
+                                       <Col md={3}>
+                                           <Button className="btn" onClick={this.selectStatVac} style={{
+                                               width: "auto",
+                                               height: "auto",
+                                               marginTop: "2.5rem",
+                                               marginBottom: "1rem",
+                                               marginLeft: "1rem",
+                                           }}>Переглянути список вакансій</Button>
+                                       </Col>
                                  </Row>
                                     <Row style={{
                                         height: "min-content"
@@ -901,13 +908,314 @@ export default class TableSheetStat extends Component {
                                     </Col>
                                     </Row>
 
+
+
                                 </div>
 
                             </Card>
-                        </Row>:prof ?
-                            <AnaliticProfes data={this.state.tablhire}/>:
-                         <TableSpisokPou data={this.state.tablhire}/>
+                        </Row>:
+                        stat ?<Row>
+                            {
+                                userInfo.center == 500 ?
+                                    <Row style={{
+                                        width: "90%"
+                                    }}>
+                                        <Col className="searchComponent">
+                                            <Col className="search-container " style={{
+                                                paddingLeft: "20%", width: "100%"
+                                            }}><h4>
+                                                Пошук за ЦЗ</h4>
+                                                <Select
+                                                    style={{
+                                                        width: "50%"
+                                                    }}
+                                                    value={search}
+                                                    onChange={this.handleChange}
+                                                    options={options}
+                                                    placeholder="Оберіть ЦЗ"
+                                                />
+                                            </Col>
 
+                                        </Col>
+
+                                        <Col md={1}>
+                                            <Button className="btn" onClick={this.searchCenter} style={{
+                                                width: "auto",
+                                                height: "auto",
+                                                marginTop: "2.5rem",
+                                            }}> Шукати</Button>
+                                        </Col>
+                                    </Row> : ""}
+                            <Card className="content-header" style={{
+                                flexDirection: "column",
+                                marginRight: "1%",
+                                marginLeft: "2%",
+                                padding: "2rem"
+                            }}>
+                                <h3 className="history col-10"style={{
+                                    flex:0,
+                                }}>Моніторинг опрацювання результатів 7 етапу
+                                    Інтернет-анкетування
+                                    роботодавців з використанням «Google Forms»
+                                </h3>
+                                <div style={{
+                                    marginLeft: "1%"
+                                }}>
+                                    <Row>
+                                        <Col md={3}>
+                                            <Button className="btn" onClick={this.selectStat} style={{
+                                                width: "auto",
+                                                height: "auto",
+                                                marginTop: "2.5rem",
+                                                marginBottom: "1rem",
+                                                marginLeft: "1rem",
+                                            }}>Переглянути список роботодавців</Button>
+                                        </Col>
+                                        <Col md={3}>
+                                            <Button className="btn" onClick={this.selectStat} style={{
+                                                width: "auto",
+                                                height: "auto",
+                                                marginTop: "2.5rem",
+                                                marginBottom: "1rem",
+                                                marginLeft: "1rem",
+                                            }}>Переглянути список вакансій</Button>
+                                        </Col>
+                                    </Row>
+                                    <Row style={{
+                                        height: "min-content"
+                                    }}>
+                                        <Col md={7} style={{
+                                            padding: "0"
+                                        }}>
+                                            <Row className="titletable"
+                                                 style={{
+                                                     paddingTop: "2rem"
+                                                 }}>
+                                                <Col className="modulstat">
+                                                    <label>Загальна кількість опитаних роботодавців</label>
+                                                </Col>
+                                                <Col
+                                                    className="modulstat">
+                                                    <label>Кількість роботодавців,які мають потребу в
+                                                        кадрах,од./</label>
+                                                </Col>
+                                                <Col
+                                                    className="modulstat">
+                                                    <label>Кількість роботодавців,які мають потребу в кадрах,%</label>
+                                                </Col>
+                                                <Col
+                                                    className="modulstat">
+                                                    <label>Кількість роботодавців,які планують скорочення
+                                                        чисельності,од.</label>
+                                                </Col>
+                                                <Col
+                                                    className="modulstat">
+                                                    <label>Кількість роботодавців,які планують скорочення
+                                                        чисельності,%</label>
+                                                </Col>
+                                            </Row>
+                                            <Row className="datting">
+                                                <Col className="modulstat">
+                                                    <label>{this.state.table.length}</label>
+                                                </Col>
+                                                <Col
+                                                    className="modulstat">
+                                                    <label>{this.state.tablhire.length}</label>
+                                                </Col>
+                                                <Col
+                                                    className="modulstat">
+                                                    <label>{this.getTableStat()}%</label>
+                                                </Col>
+                                                <Col
+                                                    className="modulstat">
+                                                    <label>{this.state.tablzv.length}</label>
+                                                </Col>
+                                                <Col
+                                                    className="modulstat">
+                                                    <label>{this.getTableStat1()}%</label>
+                                                </Col>
+                                            </Row>
+
+
+                                        </Col>
+                                        <Col md={5}>
+                                            <label className="pie"> Охоплення
+                                                опитуванням
+                                            </label>
+                                            {this.renderResult()}
+                                        </Col>
+                                    </Row>
+                                    <Row>
+                                        <Col md={7} style={{
+                                            padding: "0"
+                                        }}>
+                                            <Row className="titletable"
+                                                 style={{
+                                                     paddingTop: "2rem"
+                                                 }}>
+                                                <Col className="modulstat">
+                                                    <label>Загальна кількість опитаних роботодавців</label>
+                                                </Col>
+                                                <Col
+                                                    className="modulstat">
+                                                    <label>Кількість роботодавців,юридичні особи,од.</label>
+                                                </Col>
+                                                <Col
+                                                    className="modulstat">
+                                                    <label>Кількість роботодавців,юридичні особи,%</label>
+                                                </Col>
+                                                <Col
+                                                    className="modulstat">
+                                                    <label>Кількість роботодавців,фізичні особи,од.</label>
+                                                </Col>
+                                                <Col
+                                                    className="modulstat">
+                                                    <label>Кількість роботодавців,фізичні особи,%</label>
+                                                </Col>
+                                            </Row>
+                                            <Row className="datting">
+                                                <Col className="modulstat">
+                                                    <label>{this.state.table.length}</label>
+                                                </Col>
+                                                <Col
+                                                    className="modulstat">
+                                                    <label>{this.state.tablyurid.length}</label>
+                                                </Col>
+                                                <Col
+                                                    className="modulstat">
+                                                    <label>{this.filterStatYurid()}%</label>
+                                                </Col>
+                                                <Col
+                                                    className="modulstat">
+                                                    <label>{this.state.tablfiz.length}</label>
+                                                </Col>
+                                                <Col
+                                                    className="modulstat">
+                                                    <label>{this.filterStatFiz()}%</label>
+                                                </Col>
+                                            </Row>
+
+                                        </Col>
+                                        <Col md={5}>
+                                            <label className="pie"> Охоплення
+                                                опитуванням
+                                            </label>
+                                            {this.renderResult1()}
+                                        </Col>
+                                    </Row>
+                                    <h3 className="history col-10">Робота з роботодавцями</h3>
+                                    <Row className="titletable"
+                                         style={{
+                                             paddingTop: "2rem"
+                                         }}>
+                                        <Col className="modulstat">
+                                            <label>Кількість роботодавців,які мають потребу в
+                                                кадрах,од./</label>
+                                        </Col>
+                                        <Col
+                                            className="modulstat">
+                                            <label>Кількість роботодавців,з якими відбулись зустрічі/телефоні
+                                                переговори./</label>
+                                        </Col>
+                                        <Col
+                                            className="modulstat">
+                                            <label>%,від загальної чисельності, які мають
+                                                потребу</label>
+                                        </Col>
+                                        <Col
+                                            className="modulstat">
+                                            <label>Кількість роботодавців,які подали 3ПН,од.</label>
+                                        </Col>
+                                        <Col
+                                            className="modulstat">
+                                            <label>%,від загальної чисельності, які мають
+                                                потребу</label>
+                                        </Col>
+
+
+                                    </Row>
+                                    <Row className="datting">
+                                        <Col className="modulstat">
+                                            <label>{this.state.tablhire.length}</label>
+                                        </Col>
+                                        <Col
+                                            className="modulstat">
+                                            <label>{this.filterHireMeetyes()}</label>
+                                        </Col>
+                                        <Col
+                                            className="modulstat">
+                                            <label>{this.getTableStatMeet()}%</label>
+                                        </Col>
+                                        <Col
+                                            className="modulstat">
+                                            <label>{this.filter3PNPou()}</label>
+                                        </Col>
+                                        <Col
+                                            className="modulstat">
+                                            <label>{this.getTableStatPou()}%</label>
+                                        </Col>
+
+
+                                    </Row>
+                                    <Row className="titletable"
+                                         style={{
+                                             paddingTop: "2rem"
+                                         }}>
+                                        <Col md={2} className="modulstat">
+                                            <label>Кількість вакансій за 3ПН,од.</label>
+                                        </Col>
+                                        <Col md={2}
+                                             className="modulstat">
+                                            <label>Кількість укомплектованних вакансій ,од </label>
+                                        </Col>
+                                        <Col md={2}
+                                             className="modulstat">
+                                            <label>Рівень укомплектування,% </label>
+                                        </Col>
+                                        <Col md={2} className="modulstat">
+                                            <label>Направлено на навчання,осіб</label>
+                                        </Col>
+                                        <Col md={2}
+                                             className="modulstat">
+                                            <label>Працевлаштовано після навчання, осіб </label>
+                                        </Col>
+                                        <Col md={2}
+                                             className="modulstat">
+                                            <label>Рівень працевлаштування,% </label>
+                                        </Col>
+                                    </Row>
+                                    <Row className="datting">
+                                        <Col md={2} className="modulstat">
+                                            <label>{this.filter3PN()}</label>
+                                        </Col>
+                                        <Col md={2}
+                                             className="modulstat">
+                                            <label>{this.filterUkomp()}</label>
+                                        </Col>
+                                        <Col md={2}
+                                             className="modulstat">
+                                            <label>{this.getTableStatUkomp()}</label>
+                                        </Col>
+                                        <Col md={2} className="modulstat">
+                                            <label>{this.filterNavch()}</label>
+                                        </Col>
+                                        <Col md={2}
+                                             className="modulstat">
+                                            <label>{this.filterPraznavch()}</label>
+                                        </Col> <Col md={2}
+                                                    className="modulstat">
+                                        <label>{((this.filterPraznavch()/ this.filterNavch()) * 100).toFixed(2)}</label>
+                                    </Col>
+                                    </Row>
+
+
+
+                                </div>
+
+                            </Card>
+                        </Row>:prof?
+                            <TableSpisokPouAll data={this.state.tablhire}/>:  <TableSpisokPou data={this.state.tablhire}/>
+                        // <TableSpisokPou data={this.state.tablhire}/>
                     }
 
                 </div>

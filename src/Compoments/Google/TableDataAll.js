@@ -97,11 +97,12 @@ export default class TableData extends Component {
     componentDidUpdate(prevProps, prevState) {
         if (prevState.table !== this.state.table) {
             this.setFieldsTable()
-            console.log('фильтер таки поменялся11)).')
+            console.log('фильтер таки поменялся??)).')
         }
     }
 
     render() {
+
         console.log(this.state.table)
         console.log(this.state.table1)
         return (
@@ -145,15 +146,7 @@ export default class TableData extends Component {
                                             className="modulstat">
                                             <label>ЄДРПОУ</label>
                                         </Col>
-                                        <Col
-                                            className="modulstat">
-                                            <label>Дата зустрічі з роботодавцем</label>
-                                        </Col>
 
-                                        <Col
-                                            className="modulstat">
-                                            <label>Телефонна розмова(Дата )</label>
-                                        </Col>
 
                                         <Col
                                             className="modulstat">
@@ -205,15 +198,12 @@ export default class TableData extends Component {
                                                                 className="modulstat">
                                                                 <label>{table.edrpou}</label>
                                                             </Col>
-                                                            <Col
-                                                                className="modulstat">
-                                                                <label>{table.datemeet}</label>
-                                                            </Col>
 
                                                             <Col
                                                                 className="modulstat">
-                                                                <label>Телефонна розмова(Дата )</label>
+                                                                <label>{table.amounthire}</label>
                                                             </Col>
+
 
                                                             <Col
                                                                 className="modulstat">

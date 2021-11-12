@@ -67,8 +67,8 @@ export default function TableSpisokPou(props) {
                 filter: true,
                 sort: false,
             }
-        }
-        /* {
+        },
+       /*  {
                name: "posad",
                label: "Посада (професія) за результатами анкетування",
                options: {
@@ -131,8 +131,8 @@ export default function TableSpisokPou(props) {
                    sort: true,
                },
            },
+*/
 
-           }*/
     ]
 
     const data0 = props.data.map((item) => {
@@ -141,8 +141,8 @@ export default function TableSpisokPou(props) {
 
     console.log(data0)
 
-    function createData(posad, hiremonth, zvit, vacpersp, vacreestr, navch, praznavch, vacukomp) {
-        return {posad, hiremonth, zvit, vacpersp, vacreestr, navch, praznavch, vacukomp};
+    function createData(edrpou,nazvapou,posad, hiremonth, zvit, vacpersp, vacreestr, navch, praznavch, vacukomp) {
+        return {edrpou,nazvapou,posad, hiremonth, zvit, vacpersp, vacreestr, navch, praznavch, vacukomp};
     }
 
 
@@ -165,12 +165,12 @@ export default function TableSpisokPou(props) {
             )
 
    // console.log("vxod "+data0)
-    // console.log('vuxod '+data1)
+    //console.log('vuxod '+data1)
 
     const options = {
         filter: true,
         filterType: "dropdown",
-        responsive: "standard",
+        responsive: "vertical",
         onRowClick,
         rowsPerPage: 20,
         selectableRows: false,
@@ -197,8 +197,9 @@ export default function TableSpisokPou(props) {
                                 <Table style={{width: "100%"}} aria-label="simple table">
                                     <TableHead>
                                         <TableRow key={id}>
+
                                             <TableCell>Посада (професія) за результатами анкетування</TableCell>
-                                            <TableCell align="left">Прогнозний період надання вакансій
+                                              <TableCell align="left">Прогнозний період надання вакансій
                                                 (місяць)</TableCell>
                                             <TableCell align="left">Надано звіт 3-ПН (дата)</TableCell>
                                             <TableCell align="left">Внесено перспективну вакансію (дата)</TableCell>
@@ -217,9 +218,11 @@ export default function TableSpisokPou(props) {
                                                 return (
                                                     item.posad.map((row) => (
                                                             <TableRow key={row.titleposad}>
+
                                                                 <TableCell align="left" component="th" scope="row">
                                                                     {row.titleposad}
                                                                 </TableCell>
+
                                                                 <TableCell align="left">{row.hiremonth.hiremonth}</TableCell>
                                                                 <TableCell align="left">{row.zvit.zvit}</TableCell>
                                                                 <TableCell align="left">{row.vacpersp.vacpersp}</TableCell>
@@ -261,14 +264,16 @@ export default function TableSpisokPou(props) {
                         title={"Моніторинг опрацювання результатів 7 етапу Інтернет-анкетування роботодавців з використанням «Google Forms» "}
                         data={
                             data0.map((item) => {
+
                                     return (
                                         [
                                             item._id,
                                             item.edrpou,
                                             item.nazvapou,
-                                            item.datemeet,
                                             item.datatel,
-                                            item.note
+                                            item.datemeet,
+                                            item.note,
+
                                         ]
                                     )
                                 }, <Button
