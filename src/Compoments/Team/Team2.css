@@ -17,7 +17,7 @@
 
 .DownTeam {
     flex-direction: column;
-    margin-left: 10%;
+
 }
 
 .one {
@@ -39,7 +39,7 @@ h2 {
 }
 
 .card-img-top {
-    max-height: 80%;
+
 }
 
 .DownTeam .card-img-top {
@@ -69,13 +69,13 @@ h2 {
 .card-img-down {
     flex-shrink: 1;
     max-width: 45%;
-    max-height: 70%;
+
 }
 
 .card-img-top {
     flex-shrink: 1;
     max-width: 45%;
-    max-height: 70%;
+
 }
 
 @media screen and (max-width: 768px) {
