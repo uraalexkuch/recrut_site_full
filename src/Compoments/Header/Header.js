@@ -66,7 +66,6 @@ export default class Header extends Component {
                             marginRight: "100px",
                             color: "#FFD947"
                         }}>
-
                             <Nav.Link href="/recruting/">Головна</Nav.Link>
                             <Nav.Link href="/recruting/about">Про нас</Nav.Link>
                             <Nav.Link href="/recruting/news">Новини</Nav.Link>

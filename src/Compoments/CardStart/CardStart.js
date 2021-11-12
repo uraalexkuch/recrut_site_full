@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-
 import picture1 from "../../Img/facebook.webp"
 import picture2 from "../../Img/link.webp"
 import picture3 from "../../Img/microsoft.webp"

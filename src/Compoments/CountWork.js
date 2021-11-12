@@ -47,7 +47,7 @@ export default class CountWork extends Component {
 
                                     <div className="col-md-7 col-lg-7 align-self-center">
                                         <div className="row countrow">
-                                            <div className="col-md-auto col-lg-auto">
+                                            <div className="col-md-6 col-sm-5">
                                                 <div className="count-area-content">
                                                     <div className="count-digit">
                                                         <CountUp end={indexLabor.robotodav}
@@ -61,7 +61,7 @@ export default class CountWork extends Component {
                                                     <div className="count-title">Кількість роботодавців</div>
                                                 </div>
                                             </div>
-                                            <div className="col-md-6">
+                                            <div className="col-md-6 col-sm-5">
                                                 <div className="count-area-content">
                                                     <div className="count-digit"><CountUp end={indexLabor.vacancy}
                                                                                           redraw={true}>
@@ -74,7 +74,7 @@ export default class CountWork extends Component {
                                                     <div className="count-title">Подано вакансій</div>
                                                 </div>
                                             </div>
-                                            <div className="col-md-6">
+                                            <div className="col-md-6 col-sm-4" >
                                                 <div className="count-area-content">
                                                     <div className="count-digit"><CountUp end={indexLabor.working}
                                                                                           redraw={true}>
