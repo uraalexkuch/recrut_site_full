@@ -39,18 +39,18 @@ export default class Result extends Component {
     }
     setResult = () => {
         let id = this.parseJwt();
-        const sim0 = this.props.quizResult[0];
-        const sim01 = this.props.quizResult[0] >= 14 ? "высокий" : this.props.quizResult[0] <= 13 && this.props.quizResult[0] >= 8 ? "средний" : "низкий";
-        const sim1 = this.props.quizResult[1];
-        const sim11 = this.props.quizResult[1] >= 14 ? "высокий" : this.props.quizResult[1] <= 13 && this.props.quizResult[1] >= 8 ? "средний" : "низкий";
-        const sim2 = this.props.quizResult[2];
-        const sim21 = this.props.quizResult[2] >= 14 ? "высокий" : this.props.quizResult[2] <= 13 && this.props.quizResult[2] >= 8 ? "средний" : "низкий";
-        const sim3 = this.props.quizResult[3];
-        const sim31 = this.props.quizResult[3] >= 14 ? "высокий" : this.props.quizResult[3] <= 13 && this.props.quizResult[3] >= 8 ? "средний" : "низкий";
-        const sim4 = this.props.quizResult[4];
-        const sim41 = this.props.quizResult[4] >= 14 ? "высокий" : this.props.quizResult[4] <= 13 && this.props.quizResult[4] >= 8 ? "средний" : "низкий";
-        const allsim = (this.props.quizResult[0] + this.props.quizResult[1] + this.props.quizResult[2] + this.props.quizResult[3] + this.props.quizResult[4]) <= 39 ? "низкий"
-            : (this.props.quizResult[0] + this.props.quizResult[1] + this.props.quizResult[2] + this.props.quizResult[3] + this.props.quizResult[4]) >= 40 && (this.props.quizResult[0] + this.props.quizResult[1] + this.props.quizResult[2] + this.props.quizResult[3] + this.props.quizResult[4]) <= 69
+        const sim0 = this.props.quizResult[0]=== undefined ? 0 : this.props.quizResult[0];
+        const sim01 = sim0 >= 14 ? "высокий" : sim0 <= 13 && sim0 >= 8 ? "средний" : "низкий";
+        const sim1 = this.props.quizResult[1]=== undefined ? 0 : this.props.quizResult[1];
+        const sim11 = sim1 >= 14 ? "высокий" : sim1 <= 13 && sim1 >= 8 ? "средний" : "низкий";
+        const sim2 = this.props.quizResult[2]=== undefined ? 0 : this.props.quizResult[2];
+        const sim21 = sim2 >= 14 ? "высокий" : sim2 <= 13 && sim2 >= 8 ? "средний" : "низкий";
+        const sim3 = this.props.quizResult[3]=== undefined ? 0 : this.props.quizResult[3];
+        const sim31 = sim3 >= 14 ? "высокий" : sim3 <= 13 && sim3 >= 8 ? "средний" : "низкий";
+        const sim4 = this.props.quizResult[4]=== undefined ? 0 : this.props.quizResult[4];
+        const sim41 = sim4 >= 14 ? "высокий" : sim4 <= 13 && sim4 >= 8 ? "средний" : "низкий";
+        const allsim = (sim0 + sim1 + sim2 + sim3 + sim4) <= 39 ? "низкий"
+            : (sim0 + sim1 + sim2 + sim3 + sim4) >= 40 && (sim0 + sim1 + sim2 + sim3 + sim4) <= 69
                 ? "средний" : "высокий"
         let resultfull = `Эмоциональная осведомленность : ${sim0},степень развития: ${sim01} ,
         Управление своими эмоциями : ${sim1},степень развития: ${sim11},
@@ -86,12 +86,16 @@ export default class Result extends Component {
 
     componentDidMount() {
         this.setResult()
-        console.log(this.setResult)
+                console.log(this.setResult)
     }
 
     render() {
         this.setResult.bind(this)
-
+        const sim0 = this.props.quizResult[0] === undefined ? 0 : this.props.quizResult[0];
+        const sim1 = this.props.quizResult[1] === undefined ? 0 : this.props.quizResult[1];
+        const sim2 = this.props.quizResult[2] === undefined ? 0 : this.props.quizResult[2];
+        const sim3 = this.props.quizResult[3] === undefined ? 0 : this.props.quizResult[3];
+        const sim4 = this.props.quizResult[4] === undefined ? 0 : this.props.quizResult[4];
         const data = {
             labels: [
                 'Эмоциональная осведомленность',
@@ -101,11 +105,11 @@ export default class Result extends Component {
                 'Распознавание эмоций других людей'
             ],
             datasets: [{
-                data: [this.props.quizResult[0] / (this.props.quizResult[0] + this.props.quizResult[1] + this.props.quizResult[2] + this.props.quizResult[3] + this.props.quizResult[4]) * 100,
-                    this.props.quizResult[1] / (this.props.quizResult[0] + this.props.quizResult[1] + this.props.quizResult[2] + this.props.quizResult[3] + this.props.quizResult[4]) * 100,
-                    this.props.quizResult[2] / (this.props.quizResult[0] + this.props.quizResult[1] + this.props.quizResult[2] + this.props.quizResult[3] + this.props.quizResult[4]) * 100,
-                    this.props.quizResult[3] / (this.props.quizResult[0] + this.props.quizResult[1] + this.props.quizResult[2] + this.props.quizResult[3] + this.props.quizResult[4]) * 100,
-                    this.props.quizResult[4] / (this.props.quizResult[0] + this.props.quizResult[1] + this.props.quizResult[2] + this.props.quizResult[3] + this.props.quizResult[4]) * 100],
+                data: [sim0 / (sim0 + sim1 + sim2 + sim3 + sim4) * 100,
+                    sim1 / (sim0 + sim1 + sim2 + sim3 + sim4) * 100,
+                    sim2 / (sim0 + sim1 + sim2 + sim3 + sim4) * 100,
+                    sim3 / (sim0 + sim1 + sim2 + sim3 + sim4) * 100,
+                    sim4 / (sim0 + sim1 + sim2 + sim3 + sim4) * 100],
                 backgroundColor: [
                     '#FF6384',
                     `#00FF00`,
