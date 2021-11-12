@@ -1,7 +1,6 @@
 .DownTeam {
     margin-right: 60px;
     width: 100%;
-    max-width: 300px;
     flex-direction: column-reverse;
     height: auto;
     padding: 0;
@@ -16,7 +15,7 @@
     margin-left: 0;
 }
 
-.DownTeam.col-3 {
+.DownTeam {
     flex-direction: column;
     margin-left: 10%;
 }
@@ -64,16 +63,18 @@ h2 {
     width: 100%;
     height: auto;
 }
-
+.department  card{
+    flex-direction: row;
+}
 .card-img-down {
     flex-shrink: 1;
-    max-width: 100%;
+    max-width: 45%;
     max-height: 70%;
 }
 
 .card-img-top {
     flex-shrink: 1;
-    max-width: 100%;
+    max-width: 45%;
     max-height: 70%;
 }
 
@@ -115,18 +116,35 @@ h2 {
         height: 200px;
         width: 150px;
     }
-    .DownTeam.col-3.card{
-width: 110%;
-        flex-flow: row ;
-        height: auto;
+    .card{
+        flex-direction: row;
     }
     .DownTeam .card-img-top{
         height: 200px;
         width: 150px;
     }
-    .DownTeam.col-3.card{
-        width: 110%;
-        flex-flow: row ;
+    .department.card  {
+        width: auto;
+        flex-direction: row;
         height: auto;
+        margin-bottom: 3%;
+        flex: 1 1 auto;
+    }
+    .card-img-down {
+        max-height: 50%;
+    }
+    .card-img-top {
+        height: 200px;
+        width: 150px;
+    }
+    .card-title {
+        font-size: 1.2rem;
+    }
+    .teamtext {
+        text-align: center;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #005BAA;
+
     }
 }

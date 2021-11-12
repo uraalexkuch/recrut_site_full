@@ -22,31 +22,31 @@ export default class Team2 extends Component {
                             marginLeft: "1%",
                             marginRight: "1%",
                         }}>
-                            <Card className="DownTeam col-3 " style={{
+                            <Card  className="department " style={{
                                 flexShrink: "1",
                               //  flexDirection: "column",
-                              maxHeight: "500px",
+                              //maxHeight: "500px",
                                 border: " #005BAA solid 5px",
                                 boxShadow: " 0 0 10px #333333"
                             }}>
                                 <Card.Img variant="down"
                                           src={team1} />
-                                <Card.Body>
-                                    <Card.Title>Жигайло Надія Анатоліївна</Card.Title>
+                                <Card.Body className="DownTeam col "  >
+                                    <Card.Title className="cardtitle">Жигайло Надія Анатоліївна</Card.Title>
                                     <Card.Text className="teamtext" >
                                         Начальник відділу
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
-                            <Card className="DownTeam col-3 " style={{
+                            <Card className="department " style={{
                                 flexShrink: "1",
                                // flexDirection: "column",
-                                maxHeight: "500px",
+                               // maxHeight: "500px",
                                 border: " #005BAA solid 5px",
                                 boxShadow: " 0 0 10px #333333"
                             }}>
-                                <Card.Body >
-                                    <Card.Title>Надєйкіна
+                                <Card.Body   className="DownTeam col ">
+                                    <Card.Title className="cardtitle ">Надєйкіна
                                         Ольга Вікторівна
                                     </Card.Title>
                                     <Card.Text className="teamtext">
@@ -68,17 +68,17 @@ export default class Team2 extends Component {
                             marginLeft: "1%",
                             marginRight: "1%",
                         }}>
-                            <Card className="DownTeam col-3 " style={{
+                            <Card className="department " style={{
                                 flexShrink: "1",
                                // flexDirection: "column",
-                                maxHeight: "700px",
+                                //maxHeight: "700px",
                                 border: " #005BAA solid 5px",
                                 boxShadow: " 0 0 10px #333333"
                             }}>
                                 <Card.Img variant="down"
                                           src={team3}/>
-                                <Card.Body>
-                                    <Card.Title>Суровикіна
+                                <Card.Body className="DownTeam col ">
+                                    <Card.Title className="cardtitle">Суровикіна
                                         Вікторія Юріївна
                                     </Card.Title>
                                     <Card.Text className="teamtext" >
@@ -86,15 +86,15 @@ export default class Team2 extends Component {
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
-                            <Card className="DownTeam col-3 " style={{
+                            <Card className="department "style={{
                                 flexShrink: "1",
                                 //flexDirection: "column",
-                                maxHeight: "500px",
+                                //maxHeight: "500px",
                                 border: " #005BAA solid 5px",
                                 boxShadow: " 0 0 10px #333333"
                             }}>
-                                <Card.Body >
-                                    <Card.Title>Сальник
+                                <Card.Body className="DownTeam col " >
+                                    <Card.Title className="cardtitle">Сальник
                                         Ганна Юріївна
 
                                     </Card.Title>
