@@ -140,31 +140,31 @@ export default class Result extends Component {
 
                 <div>
                     Уровень «Эмоциональная осведомленность» эмоционального интеллекта :<h4
-                    style={{color: "red"}}> {this.props.quizResult[0]}</h4>
+                    style={{color: "red"}}> {sim0}</h4>
                     <h4>степень
-                        развития: {this.props.quizResult[0] >= 14 ? "высокий" : this.props.quizResult[0] <= 13 && this.props.quizResult[0] >= 8 ? "средний" : "низкий"}</h4>
+                        развития: {sim0 >= 14 ? "высокий" : sim0 <= 13 && sim0 >= 8 ? "средний" : "низкий"}</h4>
                     <br/>
                     Уровень «Управление своими эмоциями» эмоционального интеллекта:<h4
-                    style={{color: "red"}}> {this.props.quizResult[1]}</h4>
+                    style={{color: "red"}}> {sim1}</h4>
                     <h4>степень
-                        развития: {this.props.quizResult[1] >= 14 ? "высокий" : this.props.quizResult[1] <= 13 && this.props.quizResult[1] >= 8 ? "средний" : "низкий"}</h4>
+                        развития: {sim1 >= 14 ? "высокий" : sim1 <= 13 && sim1 >= 8 ? "средний" : "низкий"}</h4>
                     <br/>
                     Уровень «Самомотивация» эмоционального интеллекта:<h4
-                    style={{color: "red"}}> {this.props.quizResult[2]}</h4> <h4>степень
-                    развития: {this.props.quizResult[2] >= 14 ? "высокий" : this.props.quizResult[2] <= 13 && this.props.quizResult[2] >= 8 ? "средний" : "низкий"}</h4>
+                    style={{color: "red"}}> {sim2}</h4> <h4>степень
+                    развития: {sim2 >= 14 ? "высокий" : sim2 <= 13 && sim2 >= 8 ? "средний" : "низкий"}</h4>
                     <br/>
                     Уровень «Эмпатия» эмоционального интеллекта :<h4
-                    style={{color: "red"}}> {this.props.quizResult[3]}</h4>
+                    style={{color: "red"}}> {sim3}</h4>
                     <h4>степень
-                        развития:{this.props.quizResult[3] >= 14 ? "высокий" : this.props.quizResult[3] <= 13 && this.props.quizResult[3] >= 8 ? "средний" : "низкий"}</h4>
+                        развития:{sim3 >= 14 ? "высокий" : sim3 <= 13 && sim3 >= 8 ? "средний" : "низкий"}</h4>
                     <br/>
                     Уровень «Распознавание эмоций других людей» эмоционального интеллекта :<h4
-                    style={{color: "red"}}> {this.props.quizResult[4]}</h4> <h4>степень
-                    развития: {this.props.quizResult[4] >= 14 ? "высокий" : this.props.quizResult[4] <= 13 && this.props.quizResult[4] >= 8 ? "средний" : "низкий"}</h4>
+                    style={{color: "red"}}> {sim4}</h4> <h4>степень
+                    развития: {sim4 >= 14 ? "высокий" : sim4 <= 13 && sim4 >= 8 ? "средний" : "низкий"}</h4>
                     <br/>
                     Интегративный уровень эмоционального интеллекта :<h4
-                    style={{color: "red"}}>  {(this.props.quizResult[0] + this.props.quizResult[1] + this.props.quizResult[2] + this.props.quizResult[3] + this.props.quizResult[4]) <= 39 ? "низкий"
-                    : (this.props.quizResult[0] + this.props.quizResult[1] + this.props.quizResult[2] + this.props.quizResult[3] + this.props.quizResult[4]) >= 40 && (this.props.quizResult[0] + this.props.quizResult[1] + this.props.quizResult[2] + this.props.quizResult[3] + this.props.quizResult[4]) <= 69
+                    style={{color: "red"}}>  {(sim0 + sim1 + sim2 + sim3 + sim4) <= 39 ? "низкий"
+                    : (sim0 + sim1 + sim2 + sim3 + sim4) >= 40 && (sim0 + sim1 + sim2 + sim3 + sim4) <= 69
                         ? "средний" : "высокий"}</h4>
 
                     <br/>
