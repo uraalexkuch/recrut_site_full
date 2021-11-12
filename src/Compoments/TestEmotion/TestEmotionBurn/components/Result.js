@@ -39,19 +39,19 @@ export default class Result extends Component {
     }
     setResult = () => {
         let id = this.parseJwt();
-        const sim0 = this.props.quizResult[0];
-        const sim01 = this.props.quizResult[0] >= 16 ? "сложившийся симптом" : this.props.quizResult[0] <= 15 && this.props.quizResult[0] >= 10 ? "складывающийся симптом" : "несложившийся симптом";
-        const sim1 = this.props.quizResult[1];
-        const sim11 = this.props.quizResult[1] >= 16 ? "сложившийся симптом" : this.props.quizResult[1] <= 15 && this.props.quizResult[1] >= 10 ? "складывающийся симптом" : "несложившийся симптом";
-        const sim2 = this.props.quizResult[2];
-        const sim21 = this.props.quizResult[2] >= 16 ? "сложившийся симптом" : this.props.quizResult[2] <= 15 && this.props.quizResult[2] >= 10 ? "складывающийся симптом" : "несложившийся симптом";
-        const sim3 = this.props.quizResult[3];
-        const sim31 = this.props.quizResult[3] >= 16 ? "сложившийся симптом" : this.props.quizResult[3] <= 15 && this.props.quizResult[3] >= 10 ? "складывающийся симптом" : "несложившийся симптом";
-        const sim4 = this.props.quizResult[4];
-        const sim41 = this.props.quizResult[4] >= 16 ? "сложившийся симптом" : this.props.quizResult[4] <= 15 && this.props.quizResult[4] >= 10 ? "складывающийся симптом" : "несложившийся симптом";
-       const allsim= (this.props.quizResult[0] + this.props.quizResult[1] + this.props.quizResult[2] + this.props.quizResult[3] + this.props.quizResult[4])<= 45?"отсутствиe «выгорания»"
-           :(this.props.quizResult[0] + this.props.quizResult[1] + this.props.quizResult[2] + this.props.quizResult[3] + this.props.quizResult[4])>=46 && (this.props.quizResult[0] + this.props.quizResult[1] + this.props.quizResult[2] + this.props.quizResult[3] + this.props.quizResult[4])<= 79
-               ?"начинающееся «выгорание»":"имеется «выгорание»."
+        const sim0 = this.props.quizResult[0] === undefined ? 0 : this.props.quizResult[0];
+        const sim01 = sim0 >= 16 ? "сложившийся симптом" : sim0 <= 15 && sim0 >= 10 ? "складывающийся симптом" : "несложившийся симптом";
+        const sim1 = this.props.quizResult[1] === undefined ? 0 : this.props.quizResult[1];
+        const sim11 = sim1 >= 16 ? "сложившийся симптом" : sim1 <= 15 && sim1 >= 10 ? "складывающийся симптом" : "несложившийся симптом";
+        const sim2 = this.props.quizResult[2] === undefined ? 0 : this.props.quizResult[2];
+        const sim21 = sim2 >= 16 ? "сложившийся симптом" : sim2 <= 15 && sim2 >= 10 ? "складывающийся симптом" : "несложившийся симптом";
+        const sim3 = this.props.quizResult[3] === undefined ? 0 : this.props.quizResult[3];
+        const sim31 = sim3 >= 16 ? "сложившийся симптом" : sim3 <= 15 && sim3 >= 10 ? "складывающийся симптом" : "несложившийся симптом";
+        const sim4 = this.props.quizResult[4] === undefined ? 0 : this.props.quizResult[4];
+        const sim41 = sim4 >= 16 ? "сложившийся симптом" : sim4 <= 15 && sim4 >= 10 ? "складывающийся симптом" : "несложившийся симптом";
+        const allsim = (sim0 + sim1 + sim2 + sim3 + sim4) <= 45 ? "отсутствиe «выгорания»"
+            : (sim0 + sim1 + sim2 + sim3 + sim4) >= 46 && (sim0 + sim1 + sim2 + sim3 + sim4) <= 79
+                ? "начинающееся «выгорание»" : "имеется «выгорание»."
         let resultfull = `Симптом Неудовлетворенность собой : ${sim0},степень развития: ${sim01} ,
         Симптом Загнанность в клетку : ${sim1},степень развития: ${sim11},
        Симптом Редукция профессиональных обязанностей: ${sim2},степень развития: ${sim21},
@@ -67,6 +67,11 @@ export default class Result extends Component {
             },
             this.setData
         );
+        console.log(this.props.quizResult[0]);
+        console.log(this.props.quizResult[1]);
+        console.log(this.props.quizResult[2]);
+        console.log(this.props.quizResult[3]);
+        console.log(this.props.quizResult[4]);
     }
     setData = async () => {
         const resultfull = this.state.resultfull
@@ -91,6 +96,11 @@ export default class Result extends Component {
 
     render() {
         this.setResult.bind(this)
+        const sim0 = this.props.quizResult[0] === undefined ? 0 : this.props.quizResult[0];
+        const sim1 = this.props.quizResult[1] === undefined ? 0 : this.props.quizResult[1];
+        const sim2 = this.props.quizResult[2] === undefined ? 0 : this.props.quizResult[2];
+        const sim3 = this.props.quizResult[3] === undefined ? 0 : this.props.quizResult[3];
+        const sim4 = this.props.quizResult[4] === undefined ? 0 : this.props.quizResult[4];
 
         const data = {
             labels: [
@@ -101,11 +111,11 @@ export default class Result extends Component {
                 'Личностная отстраненность (деперсонализация) '
             ],
             datasets: [{
-                data: [this.props.quizResult[0] / (this.props.quizResult[0] + this.props.quizResult[1] + this.props.quizResult[2] + this.props.quizResult[3] + this.props.quizResult[4]) * 100,
-                    this.props.quizResult[1] / (this.props.quizResult[0] + this.props.quizResult[1] + this.props.quizResult[2] + this.props.quizResult[3] + this.props.quizResult[4]) * 100,
-                    this.props.quizResult[2] / (this.props.quizResult[0] + this.props.quizResult[1] + this.props.quizResult[2] + this.props.quizResult[3] + this.props.quizResult[4]) * 100,
-                    this.props.quizResult[3] / (this.props.quizResult[0] + this.props.quizResult[1] + this.props.quizResult[2] + this.props.quizResult[3] + this.props.quizResult[4]) * 100,
-                    this.props.quizResult[4] / (this.props.quizResult[0] + this.props.quizResult[1] + this.props.quizResult[2] + this.props.quizResult[3] + this.props.quizResult[4]) * 100],
+                data: [sim0 / (sim0 + sim1 + sim2 + sim3 + sim4) * 100,
+                    sim1 / (sim0 + sim1 + sim2 + sim3 + sim4) * 100,
+                    sim2 / (sim0 + sim1 + sim2 + sim3 + sim4) * 100,
+                    sim3 / (sim0 + sim1 + sim2 + sim3 + sim4) * 100,
+                    sim4 / (sim0 + sim1 + sim2 + sim3 + sim4) * 100],
                 backgroundColor: [
                     '#FF6384',
                     `#00FF00`,
@@ -135,31 +145,30 @@ export default class Result extends Component {
             >
 
                 <div>
-                    Симптом «Неудовлетворенность собой»:<h4 style={{color: "red"}}> {this.props.quizResult[0]}</h4>
+                    Симптом «Неудовлетворенность собой»:<h4 style={{color: "red"}}> {sim0}</h4>
                     <h4>степень
-                        развития: {this.props.quizResult[0] >= 16 ? "сложившийся симптом" : this.props.quizResult[0] <= 15 && this.props.quizResult[0] >= 10 ? "складывающийся симптом" : "несложившийся симптом"}</h4>
+                        развития: {sim0 >= 16 ? "сложившийся симптом" : sim0 <= 15 && sim0 >= 10 ? "складывающийся симптом" : "несложившийся симптом"}</h4>
                     <br/>
-
-                    Симптом «Загнанность в клетку»:<h4 style={{color: "red"}}> {this.props.quizResult[1]}</h4>
+                    Симптом «Загнанность в клетку»:<h4 style={{color: "red"}}> {sim1}</h4>
                     <h4>степень
-                        развития: {this.props.quizResult[1] >= 16 ? "сложившийся симптом" : this.props.quizResult[1] <= 15 && this.props.quizResult[1] >= 10 ? "складывающийся симптом" : "несложившийся симптом"}</h4>
+                        развития: {sim1 >= 16 ? "сложившийся симптом" : sim1 <= 15 && sim1 >= 10 ? "складывающийся симптом" : "несложившийся симптом"}</h4>
                     <br/>
                     Симптом «Редукция профессиональных обязанностей»:<h4
-                    style={{color: "red"}}> {this.props.quizResult[2]}</h4> <h4>степень
-                    развития: {this.props.quizResult[2] >= 16 ? "сложившийся симптом" : this.props.quizResult[2] <= 15 && this.props.quizResult[2] >= 10 ? "складывающийся симптом" : "несложившийся симптом"}</h4>
+                    style={{color: "red"}}> {sim2}</h4> <h4>степень
+                    развития: {sim2 >= 16 ? "сложившийся симптом" : sim2 <= 15 && sim2 >= 10 ? "складывающийся симптом" : "несложившийся симптом"}</h4>
                     <br/>
-                    Симптом «Эмоциональная отстраненность»:<h4 style={{color: "red"}}> {this.props.quizResult[3]}</h4>
+                    Симптом «Эмоциональная отстраненность»:<h4 style={{color: "red"}}> {sim3}</h4>
                     <h4>степень
-                        развития: {this.props.quizResult[3] >= 16 ? "сложившийся симптом" : this.props.quizResult[3] <= 15 && this.props.quizResult[3] >= 10 ? "складывающийся симптом" : "несложившийся симптом"}</h4>
+                        развития: {sim3 >= 16 ? "сложившийся симптом" : sim3 <= 15 && sim3 >= 10 ? "складывающийся симптом" : "несложившийся симптом"}</h4>
                     <br/>
                     Симптом «Личностная отстраненность (деперсонализация):<h4
-                    style={{color: "red"}}> {this.props.quizResult[4]}</h4> <h4>степень
-                    развития: {this.props.quizResult[4] >= 16 ? "сложившийся симптом" : this.props.quizResult[4] <= 15 && this.props.quizResult[4] >= 10 ? "складывающийся симптом" : "несложившийся симптом"}</h4>
+                    style={{color: "red"}}> {sim4}</h4> <h4>степень
+                    развития: {sim4 >= 16 ? "сложившийся симптом" : sim4 <= 15 && sim4 >= 10 ? "складывающийся симптом" : "несложившийся симптом"}</h4>
                     <br/>
                     Состояние выгорания:<h4
-                    style={{color: "red"}}>  {(this.props.quizResult[0] + this.props.quizResult[1] + this.props.quizResult[2] + this.props.quizResult[3] + this.props.quizResult[4])<= 45?"отсутствиe «выгорания»"
-                    :(this.props.quizResult[0] + this.props.quizResult[1] + this.props.quizResult[2] + this.props.quizResult[3] + this.props.quizResult[4])>=46 && (this.props.quizResult[0] + this.props.quizResult[1] + this.props.quizResult[2] + this.props.quizResult[3] + this.props.quizResult[4])<= 75
-                    ?"начинающееся «выгорание»":"имеется «выгорание»."}</h4>
+                    style={{color: "red"}}>  {(sim0 + sim1 + sim2 + sim3 + sim4) <= 45 ? "отсутствиe «выгорания»"
+                    : (sim0 + sim1 + sim2 + sim3 + sim4) >= 46 && (sim0 + sim1 + sim2 + sim3 + sim4) <= 75
+                        ? "начинающееся «выгорание»" : "имеется «выгорание»."}</h4>
 
                     <br/>
 
