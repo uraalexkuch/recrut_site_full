@@ -15,8 +15,8 @@ export default class Team2 extends Component {
                 <CardDeck className="team2">
                     <div className=" team col-6 one">
                         <div className="title ">
-                            <h2 className="teamTitle">Відділ організації рекрутингу та партнерства у сфері
-                                зайнятості</h2>
+                            <h4 className="teamTitle">Відділ організації рекрутингу та партнерства у сфері
+                                зайнятості</h4>
                         </div>
                         <CardDeck className=" team" style={{
                             marginLeft: "1%",
@@ -24,7 +24,7 @@ export default class Team2 extends Component {
                         }}>
                             <Card className="DownTeam col-3 " style={{
                                 flexShrink: "1",
-                                flexDirection: "column",
+                              //  flexDirection: "column",
                               maxHeight: "500px",
                                 border: " #005BAA solid 5px",
                                 boxShadow: " 0 0 10px #333333"
@@ -40,7 +40,7 @@ export default class Team2 extends Component {
                             </Card>
                             <Card className="DownTeam col-3 " style={{
                                 flexShrink: "1",
-                                flexDirection: "column",
+                               // flexDirection: "column",
                                 maxHeight: "500px",
                                 border: " #005BAA solid 5px",
                                 boxShadow: " 0 0 10px #333333"
@@ -60,9 +60,9 @@ export default class Team2 extends Component {
 
                     <div className="team col-6 one">
                         <div className="title " style={{
-                            marginBottom: "3rem"
+                           // marginBottom: "3rem"
                         }}>
-                            <h2 className="teamTitle">Відділ організації надання послуг роботодавцям</h2>
+                            <h4 className="teamTitle">Відділ організації надання послуг роботодавцям</h4>
                         </div>
                         <CardDeck className=" team" style={{
                             marginLeft: "1%",
@@ -70,7 +70,7 @@ export default class Team2 extends Component {
                         }}>
                             <Card className="DownTeam col-3 " style={{
                                 flexShrink: "1",
-                                flexDirection: "column",
+                               // flexDirection: "column",
                                 maxHeight: "700px",
                                 border: " #005BAA solid 5px",
                                 boxShadow: " 0 0 10px #333333"
@@ -88,7 +88,7 @@ export default class Team2 extends Component {
                             </Card>
                             <Card className="DownTeam col-3 " style={{
                                 flexShrink: "1",
-                                flexDirection: "column",
+                                //flexDirection: "column",
                                 maxHeight: "500px",
                                 border: " #005BAA solid 5px",
                                 boxShadow: " 0 0 10px #333333"
