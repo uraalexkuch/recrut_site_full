@@ -13,7 +13,7 @@ import Text from "antd/lib/typography/Text";
 
 
 
-export default function TableSpisokPouAll1(props) {
+export default function TableSpisokPouAll(props) {
 
 
     const [id] = useState([])
